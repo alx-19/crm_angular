@@ -1,0 +1,26 @@
+<div class="card-customer" *ngFor="let customer of (customer$ | async)">
+  <div class="left-card">
+    <span class="prenom">{{customer.prenom}}</span>
+    <span class="nom">{{customer.nom}}</span>
+    <span class="city">{{customer.ville}}</span>
+    <span class="phone">{{customer.telephone}}</span>
+    <span class="mail">{{customer.mail}}</span>
+  </div>
+  <div class="right-card">
+    <button [routerLink]="['/customers/read']" class="readCustomerButton">
+      <div class="iconify-button">
+        <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
+      </div>
+    </button>
+    <button [routerLink]="['/customers/read']" class="updateCustomerButton">
+      <div class="iconify-button">
+        <app-icon-square-pen class="iconify"></app-icon-square-pen>
+      </div>
+    </button>
+    <button class="deleteCustomerButton">
+      <div class="iconify-button">
+        <app-icon-trash class="iconify"></app-icon-trash>
+      </div>
+    </button>
+  </div>
+</div>
