@@ -8,6 +8,9 @@ import { IconProductComponent } from './components/icon-product/icon-product.com
 import { IconStatisticComponent } from './components/icon-statistic/icon-statistic.component';
 import { IconUserComponent } from './components/icon-user/icon-user.component';
 import { IconLogOutComponent } from './components/icon-log-out/icon-log-out.component';
+import { IconMagnifyingClassComponent } from './components/icon-magnifying-class/icon-magnifying-class.component';
+import { IconSquarePenComponent } from './components/icon-square-pen/icon-square-pen.component';
+import { IconTrashComponent } from './components/icon-trash/icon-trash.component';
 
 
 @NgModule({
@@ -18,20 +21,26 @@ import { IconLogOutComponent } from './components/icon-log-out/icon-log-out.comp
     IconProductComponent,
     IconStatisticComponent,
     IconUserComponent,
-    IconLogOutComponent
+    IconLogOutComponent,
+    IconMagnifyingClassComponent,
+    IconSquarePenComponent,
+    IconTrashComponent
   ],
   imports: [
     CommonModule,
     FontAwesomeModule
   ],
-    exports: [
-        IconHomeComponent,
-        IconCustomerComponent,
-        IconOrderComponent,
-        IconProductComponent,
-        IconStatisticComponent,
-        IconUserComponent,
-        IconLogOutComponent
-    ]
+  exports: [
+    IconHomeComponent,
+    IconCustomerComponent,
+    IconOrderComponent,
+    IconProductComponent,
+    IconStatisticComponent,
+    IconUserComponent,
+    IconLogOutComponent,
+    IconMagnifyingClassComponent,
+    IconSquarePenComponent,
+    IconTrashComponent
+  ]
 })
 export class IconsModule { }

@@ -8,4 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index : 2
+}
+
+.customer-design{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center ;
+  height: calc( 100% - 250px);
+  margin-top: 250px;
+  background-color: #E1EBDB;
 }
