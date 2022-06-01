@@ -1,0 +1,25 @@
+{
+  "clients" : [
+    {
+      "prenom": "Alexandre",
+      "nom": "Deniel",
+      "ville": "Betton" ,
+      "telephone": "0740302010",
+      "mail": "alexandre.deniel@gmail.com"
+    },
+    {
+      "prenom": "Yann",
+      "nom": "COADOUR",
+      "ville": "Chevaigné" ,
+      "telephone": "0760908020",
+      "mail": "yann.coadour@gmail.com"
+    },
+    {
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    }
+  ]
+}
