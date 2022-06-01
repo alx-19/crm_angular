@@ -1,5 +1,35 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
+
+
+
 <div class="customer-design">
-<app-card-customer></app-card-customer>
+
+  <div class="header-main">
+    <div class="dropdown">
+      <button class="selectFilterSearch">Filtres
+        <app-icon-chevron-down></app-icon-chevron-down>
+      </button>
+      <div class="dropdown-child">
+        <option href="#">Nom A-Z</option>
+        <option href="#">Ville A-Z</option>
+      </div>
+    </div>
+    <div class="group-search">
+      <label class="Recherche" for="filteredSearch"></label>
+      <input type="search" id="filteredSearch" name="filteredSearch"
+             placeholder="Rechercher par nom de client">
+
+    </div>
+    <div id="addCustomer">
+      <a [routerLink]="['/customers/create']" id="addCustomerGroup">
+        <app-icon-square-plus></app-icon-square-plus>
+        <span class="addCustomerText">Ajouter un nouveau client</span>
+      </a>
+    </div>
+  </div>
+
+  <hr>
+
+  <app-card-customer></app-card-customer>
 </div>
 

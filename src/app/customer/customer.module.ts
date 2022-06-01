@@ -7,6 +7,7 @@ import { PageListCustomersComponent } from './pages/page-list-customers/page-lis
 import { PageReadCustomerComponent } from './pages/page-read-customer/page-read-customer.component';
 import { PageUpdateCustomerComponent } from './pages/page-update-customer/page-update-customer.component';
 import {SharedModule} from "../shared/shared.module";
+import {IconsModule} from "../icons/icons.module";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {SharedModule} from "../shared/shared.module";
   imports: [
     CommonModule,
     CustomerRoutingModule,
-    SharedModule
+    SharedModule,
+    IconsModule
   ]
 })
 export class CustomerModule { }
