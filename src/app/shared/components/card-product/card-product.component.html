@@ -1,0 +1,15 @@
+<div *ngFor="let product of (product$ | async)" xmlns="http://www.w3.org/1999/html">
+  <a [routerLink]="['/products/read']" class="readProductButton">
+    <div class="card-product">
+      <div class="card-product-img">
+        <img src="{{product.url}}" alt="Photo maison {{product.nom}}">
+      </div>
+      <div class="card-product-details">
+        <h3 class="card-product-title">{{product.nom}}</h3>
+        <p class="card-product-type">{{product.type}}</p>
+        <p class="card-product-text">à partir de</p>
+        <p class="card-product-price">{{product.tarif}}</p>
+      </div>
+    </div>
+  </a>
+</div>

@@ -72,5 +72,96 @@
       "telephone": "0750807040",
       "mail": "thomas.girardet@gmail.com"
     }
+  ],
+  "products" : [
+    {
+      "id": 1,
+      "reference": "a definir",
+      "nom": "Modele 1",
+      "type": "T2" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-1.png"
+    },
+    {
+      "id": 2,
+      "reference": "a definir",
+      "nom": "Modele 2",
+      "type": "T2/T3" ,
+      "tarif": "114900 euros",
+      "surface": "76,4 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-2.png"
+    },
+    {
+      "id": 3,
+      "reference": "a definir",
+      "nom": "Modele 3",
+      "type": "T4" ,
+      "tarif": "139900 euros",
+      "surface": "97,9 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-3.png"
+    },
+    {
+      "reference": "a definir",
+      "nom": "Modele 4",
+      "type": "T2" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-4.png"
+    },
+    {
+      "id": 5,
+      "reference": "a definir",
+      "nom": "Modele 5",
+      "type": "T2" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-5.png"
+    },
+    {
+      "id": 6,
+      "reference": "a definir",
+      "nom": "Modele 6",
+      "type": "T2/T3" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-6.png"
+    },
+    {
+      "id": 7,
+      "reference": "a definir",
+      "nom": "Modele 7",
+      "type": "T5" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-7.png"
+    },
+    {
+      "id": 8,
+      "reference": "a definir",
+      "nom": "Modele 8",
+      "type": "T6" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-8.png"
+    },
+    {
+      "id": 9,
+      "reference": "a definir",
+      "nom": "Modele 9",
+      "type": "T2" ,
+      "tarif": "999000 euros",
+      "surface": "61,7 m2",
+      "notes": "Modèle avec jacuzzi, cave à vin.",
+      "url": "../../assets/modeles/Modele-9.png"
+    }
   ]
 }

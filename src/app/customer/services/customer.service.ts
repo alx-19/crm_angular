@@ -9,7 +9,8 @@ import {CustomerM} from "../../shared/models/customer-m";
 })
 export class CustomerService {
 
-  private url: string = `${environment.apiUrl}/customers`
+  private url: string = `${environment.apiUrl}/customers`;
+
   constructor(private httpClient: HttpClient) {
 
   }
