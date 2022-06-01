@@ -1,0 +1,29 @@
+<app-header [textHeader]="titreHeader" class="tr-header"></app-header>
+<div class="home-design">
+  <a [routerLink]="['/customers/list']" class="menu-box">
+    <div>
+      CLIENTS
+    </div>
+  </a>
+  <a [routerLink]="['/orders/list']" class="menu-box">
+    <div>
+      COMMANDES
+    </div>
+  </a>
+  <a [routerLink]="['/products/list']" class="menu-box">
+    <div>
+      PRODUITS
+    </div>
+  </a>
+  <a [routerLink]="['/statistics']" class="menu-box">
+    <div>
+      STATISTIQUES
+    </div>
+  </a>
+  <!-- C'est ici que j'ajoutais la classe administratorDisplayRules-->
+  <a [routerLink]="['/users/list']" class="menu-box adminDisplay">
+    <div class="adminDisplay">
+      UTILISATEURS
+    </div>
+  </a>
+</div>

@@ -1,0 +1,31 @@
+
+
+.menu-touch :hover{
+  background-color: #367b0c;
+}
+
+.detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+.menu-actif{
+  background-color: #367b0c;
+}
+
+
+
+.title-button-menu {
+  color: var(--color-white);
+  font-size: 1rem;
+}
+
+.detail{
+  padding-top: 15px ;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,41 @@
+.description{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img{
+  margin-top: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+hr{
+  margin-top: 40px;
+  width: 120%;
+
+
+}
+
+.title-profil-menu{
+  color: white;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.role-profil-menu{
+  color: #367b0c;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.logout {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+
+
+

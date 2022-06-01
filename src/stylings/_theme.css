@@ -1,0 +1,16 @@
+:root {
+  --color-boxshadow : #00000029;
+  --color-white : #FFFFFF;
+  --color-orange : #ff914d;
+  --color-gris : #234a80;
+  --color-red : #FF0000FF;
+  --color-vert : #367b0c;
+  --color-bleu : #0d2a44;
+  --color-main-background : #E1EBDB;
+  --color-text-shadow : #0000007F;
+  --color-client-background : #42596D;
+  --color-modifier-client-vignette : #9BB85D;
+  --color-supprimer-client-vignette : #DA7878;
+  --color-button-annuler : #0D2A44;
+  --color-gris-clair : #949494;
+}

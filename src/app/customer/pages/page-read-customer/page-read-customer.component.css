@@ -1,0 +1,11 @@
+.tr-header {
+  width: calc(100vw - 22vw);
+  position: fixed;
+  height: 250px;
+  background-image: url("src/assets/backback.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
