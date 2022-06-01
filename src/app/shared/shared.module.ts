@@ -6,6 +6,7 @@ import {IconsModule} from "../icons/icons.module";
 import {RouterModule} from "@angular/router";
 import { NavProfilMenuComponent } from './components/nav-profil-menu/nav-profil-menu.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CardCustomerComponent } from './components/card-customer/card-customer.component';
 
 
 
@@ -14,13 +15,15 @@ import { HeaderComponent } from './components/header/header.component';
         LogoComponent,
         NavMenuComponent,
         NavProfilMenuComponent,
-        HeaderComponent
+        HeaderComponent,
+        CardCustomerComponent
     ],
     exports: [
         LogoComponent,
         NavMenuComponent,
         NavProfilMenuComponent,
-        HeaderComponent
+        HeaderComponent,
+        CardCustomerComponent
     ],
     imports: [
         CommonModule,

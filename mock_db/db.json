@@ -1,6 +1,7 @@
 {
-  "clients" : [
+  "customers" : [
     {
+      "id": 1,
       "prenom": "Alexandre",
       "nom": "Deniel",
       "ville": "Betton" ,
@@ -8,6 +9,7 @@
       "mail": "alexandre.deniel@gmail.com"
     },
     {
+      "id": 2,
       "prenom": "Yann",
       "nom": "COADOUR",
       "ville": "Chevaigné" ,
@@ -15,6 +17,79 @@
       "mail": "yann.coadour@gmail.com"
     },
     {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
+      "prenom": "Thomas",
+      "nom": "Girardet",
+      "ville": "Vitré" ,
+      "telephone": "0750807040",
+      "mail": "thomas.girardet@gmail.com"
+    },
+    {
+      "id": 3,
       "prenom": "Thomas",
       "nom": "Girardet",
       "ville": "Vitré" ,
