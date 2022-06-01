@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from "rxjs";
+import {ProductM} from "../../../shared/models/product-m";
+import {ProductService} from "../../services/product.service";
 
 @Component({
   selector: 'app-page-list-products',
@@ -9,9 +12,12 @@ export class PageListProductsComponent implements OnInit {
 
   public titreHeader = "PRODUITS";
 
-  constructor() { }
+  public product$!: Observable<ProductM[]>
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.product$ = this.productService.getCollection();
   }
 
 }

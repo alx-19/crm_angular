@@ -1,1 +1,28 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
+<div class="product-design">
+  <div id="header-main">
+    <div class="dropdown">
+      <button class="selectFilterSearch">Filtres <span class="iconify" data-icon="tabler:chevron-down"
+                                                       style="color: white;"></span>
+      </button>
+      <div class="dropdown-child">
+        <a href="#">Nom modèle</a>
+        <a href="#">Type</a>
+      </div>
+    </div>
+    <div class="group-search">
+      <label class="Recherche" for="filteredSearch"></label>
+      <input type="search" id="filteredSearch" name="filteredSearch"
+             placeholder="Rechercher par nom de modèle">
+    </div>
+    <div id="addProduct" class="adminDisplay">
+      <a [routerLink]="['/products/create']" id="addProductButton">
+        <span class="iconify" id="addProductIcon" data-icon="akar-icons:circle-plus-fill"></span>
+        <span id="addProductText">Ajouter un nouveau produit</span>
+      </a>
+    </div>
+  </div>
+  <hr>
+  <!-- body-main maquette html -->
+  <app-card-product id="group-product-card"></app-card-product>
+</div>
