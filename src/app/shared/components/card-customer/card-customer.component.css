@@ -1,0 +1,98 @@
+.card-customer {
+  border: 1px solid var(--color-bleu);
+  border-radius: 4px;
+  width: 350px;
+  height: 180px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  filter: drop-shadow(0px 4px 4px var(--color-text-shadow));
+}
+
+.left-card {
+  font-family: 'Montserrat', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 80%;
+}
+
+.right-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+.readCustomerButton {
+  background-color: var(--color-client-background);
+  border: var(--color-client-background) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 7px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.updateCustomerButton {
+  background-color: var(--color-modifier-client-vignette);
+  border: var(--color-modifier-client-vignette) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 7px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+
+
+.deleteCustomerButton {
+  background-color: var(--color-supprimer-client-vignette);
+  border: var(--color-supprimer-client-vignette) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 7px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.city {
+  font-family: 'Montserrat', serif;
+  font-size: 13px;
+  color: var(--color-bleu);
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  color: var(--color-vert);
+}
+
+.mail {
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  color: var(--color-vert);
+}
+
+
+
+
