@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {LoginModule} from "../login/login.module";
 
 
 
@@ -7,6 +8,9 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule
+  ],
+  exports: [
+      LoginModule
   ]
 })
 export class CoreModule { }

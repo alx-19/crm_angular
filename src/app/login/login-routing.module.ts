@@ -5,8 +5,7 @@ import {PageForgotPasswordComponent} from "./pages/page-forgot-password/page-for
 import {PageResetPasswordComponent} from "./pages/page-reset-password/page-reset-password.component";
 
 const routes: Routes = [
-  {path: '', redirectTo:'login', pathMatch: 'full'},
-  {path: 'login', component: PageLoginComponent},
+  {path: '', component: PageLoginComponent},
   {path: 'forgot', component: PageForgotPasswordComponent},
   {path: 'reset', component: PageResetPasswordComponent}
 ];

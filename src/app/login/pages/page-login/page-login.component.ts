@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageLoginComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  login(){
+    //verification USER et MDP
+
+
+  }
 }
