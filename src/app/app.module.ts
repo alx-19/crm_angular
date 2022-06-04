@@ -7,11 +7,13 @@ import {CoreModule} from "./core/core.module";
 import {UiModule} from "./ui/ui.module";
 import {SharedModule} from "./shared/shared.module";
 import {HttpClientModule} from "@angular/common/http";
+import { BreizhouseComponent } from './core/components/breizhouse/breizhouse.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    BreizhouseComponent,
   ],
   imports: [
     BrowserModule,

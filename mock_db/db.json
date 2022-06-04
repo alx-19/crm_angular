@@ -1,4 +1,24 @@
 {
+  "users" : [
+    {
+      "id": 1,
+      "prenom": "Ludovic",
+      "nom":"Martin",
+      "login": "LudovicMartin",
+      "mdp": "commercial",
+      "role": "commercial"
+    },
+    {
+      "id": 2,
+      "prenom": "Kévin",
+      "nom":"Blondet",
+      "login": "KevinBlondet",
+      "mdp": "admin",
+      "role": "admin"
+    }
+  ],
+
+
   "customers" : [
     {
       "id": 1,

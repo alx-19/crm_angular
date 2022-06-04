@@ -1,0 +1,22 @@
+<header role="banner">
+  <img src="../../../../assets/Logo.png" alt="logo" id="logo">
+</header>
+<main role="main">
+
+  <form id="connexionbloc">
+    <div id="login">
+      <label class="labelLogin" for="login">Login</label><br/>
+      <input class="inputLogin" type="text" name="login" required /><br/>
+    </div>
+
+    <div id="password">
+      <label class="labelPassword" for="password" >Mot de passe</label><br/>
+      <input class="inputPassword" type="password"  name="password" required />
+    </div>
+
+    <div id="forgot-your-password">
+      <a>mot de passe oublié</a>
+    </div>
+    <button (click)="login()" id="buttonconnexion" type="button" >Se connecter</button>
+  </form>
+</main>
