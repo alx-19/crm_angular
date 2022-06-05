@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-page-login',
@@ -9,7 +10,7 @@ export class PageLoginComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -18,6 +19,6 @@ export class PageLoginComponent implements OnInit {
   login(){
     //verification USER et MDP
 
-
+    this.router.navigate(['/breizhouse/home']);
   }
 }
