@@ -117,4 +117,7 @@ main {
   opacity: 1;
   margin-bottom: 8%;
   font-size: 24px;
+  cursor: pointer;
 }
+
+
