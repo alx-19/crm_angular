@@ -8,4 +8,170 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+}
+
+.customer-design {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 250px);
+  margin-top: 250px;
+  background-color: #E1EBDB;
+}
+
+#header-main {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  width: 90%;
+}
+
+hr{
+  width: 85%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border : var(--color-bleu) solid 0.5px;
+}
+
+#previousPage {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  background-color: var(--color-bleu);
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+#formCreateCustomer {
+  width: calc(100vw - 564px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.customerFieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  box-shadow: 0 12px 12px var(--color-boxshadow);
+  border: 1px solid var(--color-gris);
+  border-radius: 5px;
+  width: calc(100vw - 400px);
+}
+
+#customerFieldsetTop {
+  display: flex;
+  flex-direction: row;
+}
+
+#customerLeft, #customerMiddle, #customerRight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+#customerStreetNumberField{
+  width: 30%;
+  margin-right: 20px;
+}
+
+#customerStreetTypeField{
+  width: 60%;
+  margin-left: 20px;
+}
+
+#streetNumberAndType {
+  display: flex;
+  flex-direction: row;
+}
+
+#customerFieldSetBottom {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#customerFieldsetTextarea{
+  min-width: 100%;
+}
+
+#customerNotes {
+  min-width: 100%;
+  min-height: 200px;
+}
+
+.formLabel {
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.formInput {
+  height: 30px;
+}
+
+.formFileInput {
+  align-self: center;
+  font-family: montserrat, serif;
+  color: var(--color-white);
+  background: var(--color-bleu);
+  border: 0;
+  border-radius: 5px;
+  width: 400px;
+  opacity: 70%;
+}
+
+.createCustomerLabel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+#buttonResetCustomer {
+  width: 200px;
+  height: 63px;
+  align-self: center;
+  font-family: montserrat, serif;
+  color: var(--color-white);
+  background: var(--color-button-annuler);
+  border: 0;
+  border-radius: 10px;
+  opacity: 60%;
+  margin-top: 20px;
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+#buttonCreateCustomer {
+  width: 200px;
+  height: 63px;
+  align-self: center;
+  font-family: montserrat, serif;
+  color: var(--color-white);
+  background: var(--color-bleu);
+  border: 0;
+  border-radius: 10px;
+  opacity: 1;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+#buttonResetCustomer:hover {
+  opacity: 1;
+}
+
+#buttonCreateCustomer:hover {
+  opacity: 0.6;
+  background-color: var(--color-vert);
 }

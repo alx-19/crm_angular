@@ -1,5 +1,5 @@
 <div *ngFor="let product of (product$ | async)" xmlns="http://www.w3.org/1999/html">
-  <a [routerLink]="['/products/read']" class="readProductButton">
+  <a [routerLink]="['/breizhouse/products/read']" class="readProductButton">
     <div class="card-product">
       <div class="card-product-img">
         <img src="{{product.url}}" alt="Photo maison {{product.nom}}">

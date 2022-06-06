@@ -8,6 +8,7 @@ import { NavProfilMenuComponent } from './components/nav-profil-menu/nav-profil-
 import { HeaderComponent } from './components/header/header.component';
 import { CardCustomerComponent } from './components/card-customer/card-customer.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { CardUserComponent } from './components/card-user/card-user.component';
 
 
 
@@ -18,7 +19,8 @@ import { CardProductComponent } from './components/card-product/card-product.com
         NavProfilMenuComponent,
         HeaderComponent,
         CardCustomerComponent,
-        CardProductComponent
+        CardProductComponent,
+        CardUserComponent
     ],
     exports: [
         LogoComponent,
@@ -26,7 +28,8 @@ import { CardProductComponent } from './components/card-product/card-product.com
         NavProfilMenuComponent,
         HeaderComponent,
         CardCustomerComponent,
-        CardProductComponent
+        CardProductComponent,
+        CardUserComponent
     ],
     imports: [
         CommonModule,
