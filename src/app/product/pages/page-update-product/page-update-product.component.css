@@ -8,8 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
-
 
 .product-design {
   display: flex;
@@ -46,7 +46,6 @@ hr{
   width: 40px;
   height: 40px;
 }
-
 
 #formUpdateProduct {
   width: calc(100vw - 564px);
