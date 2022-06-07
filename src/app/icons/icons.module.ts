@@ -13,6 +13,7 @@ import { IconSquarePenComponent } from './components/icon-square-pen/icon-square
 import { IconTrashComponent } from './components/icon-trash/icon-trash.component';
 import { IconSquarePlusComponent } from './components/icon-square-plus/icon-square-plus.component';
 import { IconChevronDownComponent } from './components/icon-chevron-down/icon-chevron-down.component';
+import { IconComebackComponent } from './components/icon-comeback/icon-comeback.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { IconChevronDownComponent } from './components/icon-chevron-down/icon-ch
     IconSquarePenComponent,
     IconTrashComponent,
     IconSquarePlusComponent,
-    IconChevronDownComponent
+    IconChevronDownComponent,
+    IconComebackComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { IconChevronDownComponent } from './components/icon-chevron-down/icon-ch
         IconSquarePenComponent,
         IconTrashComponent,
         IconSquarePlusComponent,
-        IconChevronDownComponent
+        IconChevronDownComponent,
+        IconComebackComponent
     ]
 })
 export class IconsModule { }

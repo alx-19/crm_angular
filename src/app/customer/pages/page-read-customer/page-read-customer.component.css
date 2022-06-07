@@ -8,4 +8,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index : 2
+}
+
+.customer-design{
+  margin-top: 250px;
+  height: calc(100% - 250px);
+  background-color: var(--color-main-background);
+}
+
+
+
+.header-main{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  width: 100%;
+  background-color: var(--color-main-background);
+}
+h1{
+  text-align: center;
+  font-size: xx-large;
+
+}
+hr{
+  background-color: #E1EBDB;
+  color : var(--color-bleu);
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+
+}
+.back-button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-bleu);
+  color : var(--color-white);
 }

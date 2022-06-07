@@ -10,7 +10,9 @@ import {CustomerService} from "../../../customer/services/customer.service";
 })
 export class CardCustomerComponent implements OnInit {
 
+  display = "none";
   public customer$!: Observable<CustomerM[]>
+  public customer1$!: Observable<CustomerM>
 
   constructor(private customerService : CustomerService) {
 
@@ -18,6 +20,14 @@ export class CardCustomerComponent implements OnInit {
 
   ngOnInit(): void {
     this.customer$ = this.customerService.getCollection();
+    this.customer1$ = this.customerService.getItemById(0);
   }
 
+  openModal(){
+    this.display="block";
+  }
+
+  closeModal(){
+    this.display="none"
+  }
 }

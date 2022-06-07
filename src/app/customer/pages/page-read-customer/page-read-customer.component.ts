@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-page-read-customer',
   templateUrl: './page-read-customer.component.html',

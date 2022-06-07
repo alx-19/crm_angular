@@ -5,6 +5,7 @@ import {Observable} from "rxjs";
 import {CustomerM} from "../../../shared/models/customer-m";
 import {CustomerService} from "../../services/customer.service";
 
+
 @Component({
   selector: 'app-page-list-customers',
   templateUrl: './page-list-customers.component.html',
@@ -15,11 +16,13 @@ export class PageListCustomersComponent implements OnInit {
   public titreHeader = "CLIENTS";
 
   public customer$!: Observable<CustomerM[]>
+  public customer1$!: Observable<CustomerM>
 
   constructor(private customerService : CustomerService) { }
 
   ngOnInit(): void {
     this.customer$ = this.customerService.getCollection();
+    this.customer1$ = this.customerService.getItemById(0);
   }
 
 }
