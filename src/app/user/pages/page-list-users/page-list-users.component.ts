@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from "rxjs";
+import {UserM} from "../../../shared/models/user-m";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-page-list-users',
@@ -9,9 +12,12 @@ export class PageListUsersComponent implements OnInit {
 
   public titreHeader = "UTILISATEURS";
 
-  constructor() { }
+  public user$!: Observable<UserM[]>
+
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.user$ = this.userService.getCollection();
   }
 
 }

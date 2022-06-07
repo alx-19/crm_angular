@@ -7,6 +7,7 @@ import { PageListProductsComponent } from './pages/page-list-products/page-list-
 import { PageReadProductComponent } from './pages/page-read-product/page-read-product.component';
 import { PageUpdateProductComponent } from './pages/page-update-product/page-update-product.component';
 import {SharedModule} from "../shared/shared.module";
+import {IconsModule} from "../icons/icons.module";
 
 
 @NgModule({
@@ -16,10 +17,11 @@ import {SharedModule} from "../shared/shared.module";
     PageReadProductComponent,
     PageUpdateProductComponent
   ],
-  imports: [
-    CommonModule,
-    ProductRoutingModule,
-    SharedModule
-  ]
+    imports: [
+        CommonModule,
+        ProductRoutingModule,
+        SharedModule,
+        IconsModule
+    ]
 })
 export class ProductModule { }

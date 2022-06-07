@@ -8,4 +8,84 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+}
+
+
+.product-design {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 250px);
+  margin-top: 250px;
+  background-color: #E1EBDB;
+}
+
+#header-main {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  width: 90%;
+}
+
+hr{
+  width: 85%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border : var(--color-bleu) solid 0.5px;
+}
+
+#previousPage {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  background-color: var(--color-bleu);
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.statisticFieldset {
+  display: flex;
+  background-color: var(--color-white);
+  box-shadow: 0 12px 12px var(--color-boxshadow);
+  border: 1px solid var(--color-gris);
+  border-radius: 5px;
+}
+
+#statisticLeft, #statisticRight {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.formLabel {
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.formInput {
+  height: 30px;
+}
+
+.formFileInput  {
+  align-self: center;
+  font-family: montserrat, serif;
+  color: var(--color-white);
+  background: var(--color-bleu);
+  border : 0;
+  border-radius: 5px;
+  width: 400px;
+  opacity: 70%;
+}
+
+.readStatisticLabel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
 }

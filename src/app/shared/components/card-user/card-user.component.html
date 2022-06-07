@@ -1,0 +1,17 @@
+<div *ngFor="let user of (user$ | async)" xmlns="http://www.w3.org/1999/html">
+  <a [routerLink]="['/breizhouse/users/read']" class="readUserButton">
+    <div class="card-user">
+      <div class="card-user-img">
+        <img src="{{user.url}}" alt="Photo utilisateur 1">
+      </div>
+      <div class="card-user-details">
+        <span><img class="card-user-connect" src="{{user.connexion}}"
+                   alt="connected"></span>
+        <h3 class="card-user-title">{{user.nom}} {{user.prenom}}</h3>
+        <p class="card-user-grants">{{user.statut}}</p>
+        <p class="card-user-mail">{{user.mail}}</p>
+        <p class="card-user-phone">{{user.mobile}}</p>
+      </div>
+    </div>
+  </a>
+</div>
