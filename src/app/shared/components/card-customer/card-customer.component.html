@@ -17,10 +17,28 @@
         <app-icon-square-pen class="iconify"></app-icon-square-pen>
       </div>
     </button>
-    <button class="deleteCustomerButton">
+    <button class="deleteCustomerButton modal-trigger" (click)="openModal()"> <!--(click)="modalContainer.style.display('block')" -->
       <div class="iconify-button">
         <app-icon-trash class="iconify"></app-icon-trash>
       </div>
     </button>
+    <div [style.display]="display"  class="modal-container">
+        <div class="modal">
+          <button class="close-modal modal-trigger" (click)="closeModal()">
+            X
+          </button>
+          <h1>
+          Voulez-vous supprimez le client : {{customer.nom}} {{customer.prenom}} ?
+          </h1>
+          <div class="buttons">
+            <button class="cancel-button" (click)="closeModal()">
+              Annuler
+            </button>
+            <button class="delete-button" >
+              Supprimer
+            </button>
+          </div>
+        </div>
+      </div>
   </div>
 </div>

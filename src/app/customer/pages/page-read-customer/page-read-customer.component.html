@@ -1,159 +1,23 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
+
+
+
 <div class="customer-design">
-  <div id="header-main">
-    <div id="previousPage">
-      <a [routerLink]="['/breizhouse/customers/list']" id="previousPageIcon">
-        <app-icon-previous-page></app-icon-previous-page>
-      </a>
-    </div>
+
+  <div class="header-main">
+   <button [routerLink]="'/breizhouse/customers/list'"  class="back-button">
+      <app-icon-comeback></app-icon-comeback>
+   </button>
+
+    <h1>PROFIL CLIENT</h1>
   </div>
 
   <hr>
 
-  <div class="body-main">
-    <form id="formReadCustomer" action="" method="post">
-      <div class="customerFieldset">
-        <div id="customerFieldsetTop">
+  <div>
+    <div>
 
-          <div id="customerLeft">
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerLastname">Nom</label>
-              <input class="formInput" type="text" name="customerLastname"
-                     id="customerLastname"
-                     title="Le nom doit contenir au moins 2 lettres !"
-                     disabled/>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerFirstname">Prénom</label>
-              <input class="formInput" type="text" name="customerFirstname"
-                     id="customerFirstname"
-                     title="Le nom doit contenir au moins 2 lettres !"
-                     disabled/>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerMail">E-mail</label>
-              <input class="formInput" type="email" name="customerMail"
-                     id="customerMail"
-                     title="Veuillez rentrer un format de mail valide !"
-                     disabled/>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerPhone">Numéro de mobile</label>
-              <input class="formInput" type="tel" name="customerPhone"
-                     id="customerPhone"
-                     title="Veuillez rentrer un numéro de mobile valide !"
-                     disabled/>
-            </div>
-          </div>
-
-          <div id="customerMiddle">
-            <div id="streetNumberAndType">
-              <div class="readCustomerLabel" id="customerStreetNumberField">
-                <label class="formLabel" for="customerStreetNumber">Nº de rue</label>
-                <input class="formInput" type="text" name="customerStreetNumber"
-                       id="customerStreetNumber"
-                       title="Le numero de rue doit contenir au moins 1 chiffres !"
-                       disabled/>
-              </div>
-              <div class="readCustomerLabel" id="customerStreetTypeField">
-                <label class="formLabel" for="customerStreetType">Type de la voie</label>
-                <input class="formInput" type="text" name="customerStreetType"
-                       id="customerStreetType"
-                       title="Le type de voie doit contenir au moins 2 lettres !"
-                       disabled/>
-              </div>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerStreetName">Nom de la rue</label>
-              <input class="formInput" type="text" name="customerStreetName"
-                     id="customerStreetName"
-                     title="Le type de voie doit contenir au moins 2 lettres !"
-                     disabled/>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerAdditionalAddress">Complément d'adresse</label>
-              <input class="formInput" type="text" name="customerAdditionalAddress"
-                     id="customerAdditionalAddress"
-                     title="Le type de voie doit contenir au moins 2 lettres !"
-                     disabled/>
-            </div>
-
-          </div>
-
-          <div id="customerRight">
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerZipcode">Code postal</label>
-              <input class="formInput" type="text" name="customerZipcode" id="customerZipcode"
-                     title="Le code postal doit contenir au 5 chiffres !"
-                     disabled/>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerCity">Ville</label>
-              <input class="formInput" type="text" name="customerCity"
-                     id="customerCity"
-                     title="Le nom de la ville doit contenir au moins 2 lettres !"
-                     disabled/>
-            </div>
-            <div class="readCustomerLabel">
-              <label class="formLabel" for="customerStatus">Statut du client/Commandes</label>
-              <select class="formInput" id="customerStatus" name="customerStatus"
-                      disabled>
-                <option value="" selected>Choisir un statut</option>
-                <option value="prospect">Prospect</option>
-                <option value="nouveau-client">Nouveau client</option>
-                <option value="commande-en-cours">Commande en cours</option>
-                <option value="commande-valide">Commande validée</option>
-                <option value="a-payer">A payer</option>
-                <option value="paye">Réglée</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div id="customerFieldSetBottom">
-          <div class="readCustomerLabel" id="cutomerFieldsetTextarea">
-            <label class="formLabel" for="customerNotes">Notes</label>
-            <textarea class="formTextareaInput" name="customerNotes"
-                      id="customerNotes" placeholder="Notes complémentaires sur le client."
-                      style="width:200px"
-                      disabled></textarea>
-          </div>
-        </div>
-      </div>
-      <div>
-        <button class="adminDisplay" id="buttonDeleteCustomer" type="button"
-                onclick="document.getElementById('modalDeleteCustomer').style.display='block'">Supprimer
-          Produit
-        </button>
-        <button class="adminDisplay" id="buttonUpdateCustomer" type="button">
-          <a [routerLink]="['/breizhouse/customers/update']"
-             style="text-decoration-color: transparent; text-decoration-line: none; color: var(--color-white);">Modifier
-            Client</a>
-        </button>
-
-        <!-- DELETE MODAL -->
-        <div id="modalDeleteCustomer" class="modal">
-                        <span onclick="document.getElementById('modalDeleteCustomer').style.display='none'"
-                              class="close"
-                              title="Close Modal">×</span>
-          <form class="modal-content" action="">
-            <div class="container">
-              <h1>Suppression du client</h1>
-              <h3>Êtes-vous sûr de vouloir supprimer ce client ?</h3>
-
-              <div class="clearfix">
-                <button type="button"
-                        onclick="document.getElementById('modalDeleteCustomer').style.display='none'"
-                        class="cancelbtn">Annuler
-                </button>
-                <button type="submit"
-                        onclick="document.getElementById('modalDeleteCustomer').style.display='none'"
-                        class="deletebtn">Confirmer
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </form>
+    </div>
   </div>
+
 </div>
