@@ -9,12 +9,12 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/disconnected.jpeg"
+      "notes": ""
+
     },
     {
       "id": 2,
@@ -25,12 +25,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/connected.jpeg"
+      "notes": ""
     },
     {
       "id": 3,
@@ -41,12 +40,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/disconnected.jpeg"
+      "notes": ""
     },
     {
       "id": 4,
@@ -57,12 +55,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/disconnected.jpeg"
+      "notes": ""
     },
     {
       "id": 5,
@@ -73,12 +70,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/connected.jpeg"
+      "notes": ""
     },
     {
       "id": 6,
@@ -89,12 +85,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/disconnected.jpeg"
+      "notes": ""
     },
     {
       "id": 7,
@@ -105,12 +100,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/disconnected.jpeg"
+      "notes": ""
     },
     {
       "id": 8,
@@ -121,12 +115,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/connected.jpeg"
+      "notes": ""
     },
     {
       "id": 9,
@@ -137,12 +130,11 @@
       "streetNumber": "10",
       "streetType": "rue",
       "streetName": "de la gare",
-      "streetAditinoal": "Lieu dit",
+      "streetAditional": "Lieu dit",
       "zipCode": "35000",
       "city": "Rennes",
       "status": "En cours",
-      "notes": "",
-      "connectedStatus": "../../assets/disconnected.jpeg"
+      "notes": ""
     }
   ],
   "users" : [
@@ -150,10 +142,10 @@
       "id": 1,
       "firstname": "Alexandre",
       "lastname": "Deniel",
-      "city": "Betton" ,
       "mobileNumber": "0740302010",
       "mail": "alexandre.deniel@gmail.com",
       "urlPhoto": "../../assets/users/userAdmin.png",
+      "connectedStatus": "../../assets/disconnected.jpeg",
       "login": "LudovicMartin",
       "password": "commercial",
       "grants": "commercial"
@@ -162,10 +154,10 @@
       "id": 2,
       "firstname": "Yann",
       "lastname": "COADOUR",
-      "city": "Chevaigné" ,
       "mobileNumber": "0760908020",
       "mail": "yann.coadour@gmail.com",
       "urlPhoto": "../../assets/users/userCo.png",
+      "connectedStatus": "../../assets/connected.jpeg",
       "login": "KevinBlondet",
       "password": "admin",
       "grants": "admin"
@@ -174,10 +166,10 @@
       "id": 3,
       "firstname": "Thomas",
       "lastname": "Girardet",
-      "city": "Vitré" ,
       "mobileNumber": "0750807040",
       "mail": "thomas.girardet@gmail.com",
       "urlPhoto": "../../assets/users/userAdmin.png",
+      "connectedStatus": "../../assets/disconnected.jpeg",
       "login": "ghfdjks",
       "password": "commercial",
       "grants": "commercial"
@@ -186,10 +178,10 @@
       "id": 4,
       "firstname": "Alexandre",
       "lastname": "Deniel",
-      "city": "Betton" ,
       "mobileNumber": "0740302010",
       "mail": "alexandre.deniel@gmail.com",
       "urlPhoto": "../../assets/users/userAdmin.png",
+      "connectedStatus": "../../assets/disconnected.jpeg",
       "login": "LudovicMartin",
       "password": "commercial",
       "grants": "commercial"
@@ -198,10 +190,10 @@
       "id": 5,
       "firstname": "Yann",
       "lastname": "COADOUR",
-      "city": "Chevaigné" ,
       "mobileNumber": "0760908020",
       "mail": "yann.coadour@gmail.com",
       "urlPhoto": "../../assets/users/userCo.png",
+      "connectedStatus": "../../assets/connected.jpeg",
       "login": "KevinBlondet",
       "password": "admin",
       "grants": "admin"
@@ -210,10 +202,10 @@
       "id": 6,
       "firstname": "Thomas",
       "lastname": "Girardet",
-      "city": "Vitré" ,
       "mobileNumber": "0750807040",
       "mail": "thomas.girardet@gmail.com",
       "urlPhoto": "../../assets/users/userAdmin.png",
+      "connectedStatus": "../../assets/disconnected.jpeg",
       "login": "ghfdjks",
       "password": "commercial",
       "grants": "commercial"
@@ -222,10 +214,10 @@
       "id": 7,
       "firstname": "Alexandre",
       "lastname": "Deniel",
-      "city": "Betton" ,
       "mobileNumber": "0740302010",
       "mail": "alexandre.deniel@gmail.com",
       "urlPhoto": "../../assets/users/userAdmin.png",
+      "connectedStatus": "../../assets/disconnected.jpeg",
       "login": "LudovicMartin",
       "password": "commercial",
       "grants": "commercial"
@@ -234,10 +226,10 @@
       "id": 8,
       "firstname": "Yann",
       "lastname": "COADOUR",
-      "city": "Chevaigné" ,
       "mobileNumber": "0760908020",
       "mail": "yann.coadour@gmail.com",
       "urlPhoto": "../../assets/users/userCo.png",
+      "connectedStatus": "../../assets/connected.jpeg",
       "login": "KevinBlondet",
       "password": "admin",
       "grants": "admin"
@@ -246,10 +238,10 @@
       "id": 9,
       "firstname": "Thomas",
       "lastname": "Girardet",
-      "city": "Vitré" ,
       "mobileNumber": "0750807040",
       "mail": "thomas.girardet@gmail.com",
       "urlPhoto": "../../assets/users/userAdmin.png",
+      "connectedStatus": "../../assets/disconnected.jpeg",
       "login": "ghfdjks",
       "password": "commercial",
       "grants": "commercial"
