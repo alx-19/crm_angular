@@ -18,6 +18,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
+import { DialogReadCustomerComponent } from './components/dialog-read-customer/dialog-read-customer.component';
 
 
 
@@ -31,7 +32,8 @@ import {ReactiveFormsModule} from "@angular/forms";
         CardProductComponent,
         CardUserComponent,
         CardCustomerModalComponent,
-        DialogCreateCustomerComponent
+        DialogCreateCustomerComponent,
+        DialogReadCustomerComponent
     ],
     exports: [
         LogoComponent,

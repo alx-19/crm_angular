@@ -5,6 +5,7 @@ import {CustomerM} from "../../models/customer-m";
 import {CustomerService} from "../../../customer/services/customer.service";
 import {CardCustomerModalComponent} from "../card-customer-modal/card-customer-modal.component";
 import {DialogCreateCustomerComponent} from "../dialog-create-customer/dialog-create-customer.component";
+import {DialogReadCustomerComponent} from "../dialog-read-customer/dialog-read-customer.component";
 
 
 
@@ -55,5 +56,11 @@ export class CardCustomerComponent implements OnInit {
         error:()=>{
           alert("Erreur lors de la suppression du CLient")
         }})
+  }
+
+  openDialogReadCustomer(){
+    this.dialog.open(DialogReadCustomerComponent, {
+      width: '75%'
+    })
   }
 }
