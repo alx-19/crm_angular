@@ -23,15 +23,15 @@ export class CustomerService {
     return this.httpClient.get<CustomerM[]>(this.url);
   }
 
-  deleteItemById(id:number): Observable<void> {
+  deleteCustomer(id:number): Observable<void> {
     return this.httpClient.delete<void>(this.url + '/' +id);
   }
 
-  updateItem(customer : CustomerM): Observable<CustomerM> {
-    return this.httpClient.put<CustomerM>(this.url + '/' + customer.id, customer);
+  putCustomer(customer: CustomerM, id: 0): Observable<CustomerM> {
+    return this.httpClient.put<CustomerM>(this.url + '/' +id, customer);
   }
 
-  addItem(customer : CustomerM): Observable<void> {
+  postCustomer(customer : CustomerM): Observable<void> {
     return this.httpClient.post<void>(this.url, customer);
   }
 }

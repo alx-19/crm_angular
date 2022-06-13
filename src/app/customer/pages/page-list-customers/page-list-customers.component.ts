@@ -1,10 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import {Observable} from "rxjs";
-import {CustomerM} from "../../../shared/models/customer-m";
 import {CustomerService} from "../../services/customer.service";
-
+import {MatDialog} from '@angular/material/dialog';
+import {
+  DialogCreateCustomerComponent
+} from "../../../shared/components/dialog-create-customer/dialog-create-customer.component";
 
 @Component({
   selector: 'app-page-list-customers',
@@ -15,14 +16,34 @@ export class PageListCustomersComponent implements OnInit {
 
   public titreHeader = "CLIENTS";
 
-  public customer$!: Observable<CustomerM[]>
-  public customer1$!: Observable<CustomerM>
-
-  constructor(private customerService : CustomerService) { }
+  constructor(private dialog : MatDialog,
+              private customer : CustomerService) { }
 
   ngOnInit(): void {
-    this.customer$ = this.customerService.getCollection();
-    this.customer1$ = this.customerService.getItemById(0);
+
+    this.getAllCustomers();
   }
 
+
+  openDialogCreateCustomer() {
+    this.dialog.open(DialogCreateCustomerComponent, {
+      width: '45%'
+    }).afterClosed().subscribe(value => {
+      if(value == 'save'){
+        this.getAllCustomers();
+      }
+    })
+  }
+
+  getAllCustomers(){
+    this.customer.getCollection()
+      .subscribe({
+        next : (res)=>{
+          console.log(res);
+        },
+        error : () =>{
+          alert("Erreur lors de la récupération des enregistrements")
+    }
+      })
+  }
 }

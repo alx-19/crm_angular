@@ -1,9 +1,9 @@
 <div class="card-customer" *ngFor="let customer of (customer$ | async)">
   <div class="left-card">
-    <span class="prenom">{{customer.prenom}}</span>
-    <span class="nom">{{customer.nom}}</span>
-    <span class="city">{{customer.ville}}</span>
-    <span class="phone">{{customer.telephone}}</span>
+    <span class="prenom">{{customer.firstname}}</span>
+    <span class="nom">{{customer.lastname}}</span>
+    <span class="city">{{customer.city}}</span>
+    <span class="phone">{{customer.mobileNumber}}</span>
     <span class="mail">{{customer.mail}}</span>
   </div>
   <div class="right-card">
@@ -12,33 +12,14 @@
         <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
       </div>
     </button>
-    <button [routerLink]="['/breizhouse/customers/update']" class="updateCustomerButton">
+    <button  (click)="editCustomer(customer)" class="updateCustomerButton">
       <div class="iconify-button">
         <app-icon-square-pen class="iconify"></app-icon-square-pen>
       </div>
     </button>
-    <button class="deleteCustomerButton modal-trigger" (click)="openModal()"> <!--(click)="modalContainer.style.display('block')" -->
+    <button  (click)="deleteCustomer(customer.id)"  class="deleteCustomerButton" >
       <div class="iconify-button">
         <app-icon-trash class="iconify"></app-icon-trash>
       </div>
     </button>
-    <div [style.display]="display"  class="modal-container">
-        <div class="modal">
-          <button class="close-modal modal-trigger" (click)="closeModal()">
-            X
-          </button>
-          <h1>
-          Voulez-vous supprimez le client : {{customer.nom}} {{customer.prenom}} ?
-          </h1>
-          <div class="buttons">
-            <button class="cancel-button" (click)="closeModal()">
-              Annuler
-            </button>
-            <button class="delete-button" >
-              Supprimer
-            </button>
-          </div>
-        </div>
-      </div>
-  </div>
 </div>
