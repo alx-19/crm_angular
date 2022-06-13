@@ -1,0 +1,65 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="createCustomerForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nom</mat-label>
+      <input formControlName="firstname" matInput placeholder="Nom">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Prénom</mat-label>
+      <input formControlName="lastname" matInput placeholder="Prénom">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>E-mail</mat-label>
+      <input formControlName="mail" matInput placeholder="E-mail">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>N° de Téléphone</mat-label>
+      <input formControlName="mobileNumber" matInput placeholder="N° de Téléphone">
+    </mat-form-field>
+    <h2>Adresse</h2>
+    <mat-form-field appearance="outline">
+      <mat-label>N° de rue</mat-label>
+      <input formControlName="streetNumber" matInput placeholder="N° de rue">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Type de rue</mat-label>
+      <input formControlName="streetType" matInput placeholder="Type de rue">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Nom de la rue</mat-label>
+      <input formControlName="streetName" matInput placeholder="Nom de la rue">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Nom de la rue 2</mat-label>
+      <input formControlName="streetAditional" matInput placeholder="Nom de la rue 2">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Code Postal</mat-label>
+      <input formControlName="zipCode" matInput placeholder="Code Postal">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Ville</mat-label>
+      <input formControlName="city" matInput placeholder="Ville">
+    </mat-form-field>
+    <h2>Avancée Commande</h2>
+    <mat-form-field appearance="fill">
+      <mat-label>Statut Commande</mat-label>
+      <mat-select formControlName="status">
+        <mat-option value="one">Devis</mat-option>
+        <mat-option value="two">Signé</mat-option>
+        <mat-option value="two">Production</mat-option>
+        <mat-option value="two">Livraison</mat-option>
+        <mat-option value="two">Payé</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Notes</mat-label>
+      <textarea formControlName="notes" matInput placeholder="Ex. Commentaires client..."></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'center'">
+  <button mat-raised-button color="warn" mat-dialog-close="">Annuler</button>
+  <button mat-raised-button color="primary" (click)="addCustomer()">{{actionBtn}}</button>
+</div>

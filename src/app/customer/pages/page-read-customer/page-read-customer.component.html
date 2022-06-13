@@ -1,23 +1,32 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
-
-
-
 <div class="customer-design">
-
-  <div class="header-main">
-   <button [routerLink]="'/breizhouse/customers/list'"  class="back-button">
-      <app-icon-comeback></app-icon-comeback>
-   </button>
-
-    <h1>PROFIL CLIENT</h1>
+  <div id="header-main">
+    <div id="previousPage">
+      <a [routerLink]="['/breizhouse/customers/list']" id="previousPageIcon">
+        <app-icon-previous-page></app-icon-previous-page>
+      </a>
+    </div>
+    <h1>Fiche Client : {{data.firstname}} {{data.lastname}}</h1>
   </div>
 
   <hr>
 
-  <div>
-    <div>
+  <div class="body-main">
+    <h2>Client</h2>
+    <p>Nom : {{data.lastname}}</p>
+    <p>Prénom : {{data.firstname}}</p>
+    <p>Mail : {{data.mail}}</p>
+    <p>Numéro de téléphone : {{data.mobileNumber}}</p>
+    <h2>Adresse Client</h2>
+    <p>N°: {{data.streetNumber}}</p>
+    <p>Type de rue : {{data.streetType}}</p>
+    <p>Nom de la rue : {{data.streetName}}</p>
+    <p>Complément d'adresse : {{data.streetAditional}}</p>
+    <p>Code postal : {{data.zipCode}}</p>
+    <p>Ville : {{data.city}}</p>
+    <h2>Autres Informations</h2>
+    <p>Status de la Commande : {{data.status}}</p>
+    <p>Notes : {{data.notes}}</p>
 
-    </div>
   </div>
-
 </div>

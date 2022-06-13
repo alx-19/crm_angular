@@ -7,7 +7,7 @@
     <span class="mail">{{customer.mail}}</span>
   </div>
   <div class="right-card">
-    <button [routerLink]="['/breizhouse/customers/read']" class="readCustomerButton">
+    <button [routerLink]="['customers/' + customer.id]" class="readCustomerButton">
       <div class="iconify-button">
         <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
       </div>
