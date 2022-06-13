@@ -9,6 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardCustomerComponent } from './components/card-customer/card-customer.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { CardUserComponent } from './components/card-user/card-user.component';
+import { CardCustomerModalComponent } from './components/card-customer-modal/card-customer-modal.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatButtonModule} from "@angular/material/button";
+import { DialogCreateCustomerComponent } from './components/dialog-create-customer/dialog-create-customer.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatIconModule} from "@angular/material/icon";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -20,7 +29,9 @@ import { CardUserComponent } from './components/card-user/card-user.component';
         HeaderComponent,
         CardCustomerComponent,
         CardProductComponent,
-        CardUserComponent
+        CardUserComponent,
+        CardCustomerModalComponent,
+        DialogCreateCustomerComponent
     ],
     exports: [
         LogoComponent,
@@ -34,7 +45,14 @@ import { CardUserComponent } from './components/card-user/card-user.component';
     imports: [
         CommonModule,
         IconsModule,
-        RouterModule
+        RouterModule,
+        MatDialogModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatIconModule,
+        MatInputModule,
+        MatSelectModule,
+        ReactiveFormsModule
     ]
 })
 export class SharedModule { }
