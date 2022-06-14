@@ -114,7 +114,6 @@ app-card-customer{
   align-items: center;
   color: var(--color-bleu);
   font-family: 'Montserrat', serif;
-  font-size: 18px ;
   text-decoration: none;
 }
 
@@ -122,6 +121,7 @@ app-icon-square-plus {
   color: var(--color-bleu);
   margin-right: 10px;
   text-decoration: none;
+  font-size: 35px;
 }
 
 app-icon-square-plus fa-icon{

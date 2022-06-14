@@ -8,6 +8,7 @@ import { PageReadCustomerComponent } from './pages/page-read-customer/page-read-
 import { PageUpdateCustomerComponent } from './pages/page-update-customer/page-update-customer.component';
 import {SharedModule} from "../shared/shared.module";
 import {IconsModule} from "../icons/icons.module";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -17,11 +18,12 @@ import {IconsModule} from "../icons/icons.module";
     PageReadCustomerComponent,
     PageUpdateCustomerComponent
   ],
-  imports: [
-    CommonModule,
-    CustomerRoutingModule,
-    SharedModule,
-    IconsModule
-  ]
+    imports: [
+        CommonModule,
+        CustomerRoutingModule,
+        SharedModule,
+        IconsModule,
+        MatButtonModule
+    ]
 })
 export class CustomerModule { }

@@ -1,0 +1,80 @@
+/*modal{
+  width: 350px;
+  height: auto;
+  padding: 10px;
+  background: var(--color-white);
+  border : #0D2A44 solid 1px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); ;
+}
+
+.close-modal{
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: red;
+  color: var(--color-white);
+}
+
+.modal h1{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cancel-button{
+  border: #0D2A44 1px solid;
+  border-radius: 40px;
+  background-color: var(--color-button-annuler);
+  color: var(--color-white);
+  height: 50px;
+  width: 130px;
+}
+
+.delete-button{
+  border: #0D2A44 1px solid;
+  border-radius: 40px;
+  background-color: var(--color-supprimer-client-vignette);
+  color: var(--color-white);
+  height: 50px;
+  width: 130px;
+} */
+h2{
+  color: var(--color-red);
+}
+
+p{
+  font-size: 15px;
+  color: var(--color-bleu);
+}
+
+.cancel-button{
+  border: #0D2A44 1px solid;
+  border-radius: 40px;
+  background-color: var(--color-button-annuler);
+  color: var(--color-white);
+  height: 50px;
+  width: 130px;
+}
+
+.delete-button{
+  border: #0D2A44 1px solid;
+  border-radius: 40px;
+  background-color: var(--color-supprimer-client-vignette);
+  color: var(--color-white);
+  height: 50px;
+  width: 130px;
+}

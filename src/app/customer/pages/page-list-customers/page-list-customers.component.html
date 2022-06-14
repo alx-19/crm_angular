@@ -21,10 +21,10 @@
 
     </div>
     <div id="addCustomer">
-      <a [routerLink]="['/breizhouse/customers/create']" id="addCustomerGroup">
+      <button (click)="openDialogCreateCustomer()" id="addCustomerGroup">
         <app-icon-square-plus></app-icon-square-plus>
         <span class="addCustomerText">Ajouter un nouveau client</span>
-      </a>
+      </button>
     </div>
   </div>
 

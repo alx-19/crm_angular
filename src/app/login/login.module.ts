@@ -5,6 +5,7 @@ import { LoginRoutingModule } from './login-routing.module';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageForgotPasswordComponent } from './pages/page-forgot-password/page-forgot-password.component';
 import { PageResetPasswordComponent } from './pages/page-reset-password/page-reset-password.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -13,9 +14,10 @@ import { PageResetPasswordComponent } from './pages/page-reset-password/page-res
     PageForgotPasswordComponent,
     PageResetPasswordComponent
   ],
-  imports: [
-    CommonModule,
-    LoginRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        LoginRoutingModule,
+        ReactiveFormsModule
+    ]
 })
 export class LoginModule { }

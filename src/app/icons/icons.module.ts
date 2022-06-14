@@ -13,7 +13,8 @@ import { IconSquarePenComponent } from './components/icon-square-pen/icon-square
 import { IconTrashComponent } from './components/icon-trash/icon-trash.component';
 import { IconSquarePlusComponent } from './components/icon-square-plus/icon-square-plus.component';
 import { IconChevronDownComponent } from './components/icon-chevron-down/icon-chevron-down.component';
-import { IconPreviousPageComponent } from './components/icon-previous-page/icon-previous-page.component';
+import { IconComebackComponent } from './components/icon-comeback/icon-comeback.component';
+import {IconPreviousPageComponent} from "./components/icon-previous-page/icon-previous-page.component";
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { IconPreviousPageComponent } from './components/icon-previous-page/icon-
     IconTrashComponent,
     IconSquarePlusComponent,
     IconChevronDownComponent,
+    IconComebackComponent,
     IconPreviousPageComponent
   ],
   imports: [
@@ -49,6 +51,7 @@ import { IconPreviousPageComponent } from './components/icon-previous-page/icon-
     IconTrashComponent,
     IconSquarePlusComponent,
     IconChevronDownComponent,
+    IconComebackComponent,
     IconPreviousPageComponent
   ]
 })
