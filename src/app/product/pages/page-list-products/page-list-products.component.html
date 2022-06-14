@@ -16,7 +16,7 @@
              placeholder="Rechercher par nom de modèle">
     </div>
     <div id="addProduct" class="adminDisplay">
-      <a [routerLink]="['/breizhouse/products/create']" id="addProductButton">
+      <a (click)="openDialogCreateCustomer()" id="addProductButton">
         <app-icon-square-plus></app-icon-square-plus>
         <span id="addProductText">Ajouter un nouveau produit</span>
       </a>
