@@ -1,115 +1,30 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 <div class="product-design">
   <div id="header-main">
-    <div id="previousPage">
-      <a [routerLink]="['/breizhouse/products/list']" id="previousPageIcon">
-        <app-icon-previous-page></app-icon-previous-page>
-      </a>
-    </div>
+    <h1>Fiche Produit : {{data.modelName}} </h1>
   </div>
 
   <hr>
 
-  <div id="body-main">
-    <form id="formReadProduct" action="" method="">
-      <div class="productFieldset">
+  <div class="body-main">
+    <div class="bloc-info">
 
-        <div id="productLeft">
-          <div class="readProductLabel">
-            <label class="formLabel" for="productRef">Référence du produit</label>
-            <input class="formInput" type="text" name="productRef" id="productRef" value="2020M1P4"
-                   disabled/>
-          </div>
+      <div><p class="attribut">Nom : </p> {{data.modelName}}</div>
+      <div><p class="attribut">Référence : </p> {{data.reference}}</div>
+      <div><p class="attribut">Type de loggement :</p> {{data.dwellingType}}</div>
+      <div><p class="attribut">Superficie : </p>{{data.dwellingType}}</div>
+      <div><p class="attribut">Prix :</p> {{data.price}} </div>
+      <div><p class="attribut">Description :</p> {{data.description}}</div>
+      <div><p class="attribut">URL Photo :</p> {{data.urlPhoto}}</div>
 
-          <div class="readProductLabel">
-            <label class="formLabel" for="productName">Nom du produit</label>
-            <input class="formInput" type="text" name="productName" id="productName" value="Modèle 1"
-                   disabled/>
-          </div>
 
-          <div class="readProductLabel">
-            <label class="formLabel" for="productType">Type du produit</label>
-            <input class="formInput" type="text" name="productType" id="productType" value="T 2"
-                   disabled/>
-          </div>
-
-          <div class="readProductLabel">
-            <label class="formLabel" for="productNotes">Description</label>
-            <textarea class="formTextareaInput" name="productNotes" id="productNotes" rows="14"
-                      cols="22" disabled></textarea>
-          </div>
-        </div>
-
-        <div id="productRight">
-          <div class="readProductLabel">
-            <label class="formLabel" for="productTarif">Tarif du produit</label>
-            <input class="formInput" type="text" name="productTarif" id="productTarif"
-                   value="99000 euros" disabled/>
-          </div>
-
-          <div class="readProductLabel">
-            <label class="formLabel" for="productSurface">Surface du produit en m2</label>
-            <input class="formInput" type="text" name="productSurface" id="productSurface" value="90"
-                   disabled/>
-          </div>
-
-          <div class="readProductLabel">
-            <label class="formLabel" for="productFile">Photo du produit</label>
-            <input class="formFileInput adminDisplay" type="file" id="productFile" name="productFile"
-                   disabled>
-          </div>
-
-          <div class="displayProductImg">
-            IMAGE
-          </div>
-        </div>
-      </div>
-      <div>
-        <button class="adminDisplay" id="buttonDeleteProduct" type="button"
-                onclick="document.getElementById('modalDeleteProduct').style.display='block'">Supprimer
-          Produit
-        </button>
-        <button class="adminDisplay" id="buttonUpdateProduct" type="button">
-          <a [routerLink]="['/breizhouse/products/update']"
-             style="text-decoration-color: transparent; text-decoration-line: none; color: var(--color-white);">Modifier
-            Produit</a>
-        </button>
-
-        <!-- DELETE MODAL -->
-        <div id="modalDeleteProduct" class="modal">
-                        <span onclick="document.getElementById('modalDeleteProduct').style.display='none'" class="close"
-                              title="Close Modal">×</span>
-          <form class="modal-content" action="">
-            <div class="container">
-              <h1>Suppression du produit</h1>
-              <h3>Êtes-vous sûr de vouloir supprimer ce produit ?</h3>
-
-              <div class="clearfix">
-                <button type="button"
-                        onclick="document.getElementById('modalDeleteProduct').style.display='none'"
-                        class="cancelbtn">Annuler
-                </button>
-                <button type="submit"
-                        onclick="document.getElementById('modalDeleteProduct').style.display='none'"
-                        class="deletebtn">Confirmer
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </form>
+    </div>
+    <button mat-stroked-button class="quitButton" [routerLink]="['/breizhouse/products/list']">Quitter</button>
   </div>
+
+
 </div>
 
-<script>
-  // Get the modal
-  var modalDeleteProduct = document.getElementById('modalDeleteProduct');
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    if (event.target === modalDeleteProduct) {
-      modalDeleteProduct.style.display = "none";
-    }
-  }
-</script>
+
+

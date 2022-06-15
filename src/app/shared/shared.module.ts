@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardCustomerComponent } from './components/card-customer/card-customer.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { CardUserComponent } from './components/card-user/card-user.component';
-import { CardCustomerModalComponent } from './components/card-customer-modal/card-customer-modal.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 import { DialogCreateCustomerComponent } from './components/dialog-create-customer/dialog-create-customer.component';
@@ -19,6 +18,9 @@ import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {ReactiveFormsModule} from "@angular/forms";
 import { DialogReadCustomerComponent } from './components/dialog-read-customer/dialog-read-customer.component';
+import {CardCustomerModalComponent} from "./components/card-customer-modal/card-customer-modal.component";
+import { DialogCreateProductComponent } from './components/dialog-create-product/dialog-create-product.component';
+import { DialogCreateUserComponent } from './components/dialog-create-user/dialog-create-user.component';
 
 
 
@@ -33,7 +35,9 @@ import { DialogReadCustomerComponent } from './components/dialog-read-customer/d
         CardUserComponent,
         CardCustomerModalComponent,
         DialogCreateCustomerComponent,
-        DialogReadCustomerComponent
+        DialogReadCustomerComponent,
+        DialogCreateProductComponent,
+        DialogCreateUserComponent
     ],
     exports: [
         LogoComponent,
@@ -42,7 +46,8 @@ import { DialogReadCustomerComponent } from './components/dialog-read-customer/d
         HeaderComponent,
         CardCustomerComponent,
         CardProductComponent,
-        CardUserComponent
+        CardUserComponent,
+        DialogCreateCustomerComponent
     ],
     imports: [
         CommonModule,

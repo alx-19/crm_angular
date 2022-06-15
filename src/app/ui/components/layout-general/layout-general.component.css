@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
 }
+
 .left{
   background-color: #0D2A44;
   width: 22vw;
@@ -11,13 +12,15 @@
   bottom: 0;
   left: 0;
 }
+
 .right{
   display: flex;
   flex-direction: column;
   width: calc(100vw - 22vw);
+  height: 100vh;
   margin-left: 22vw;
+  background-color: var(--color-main-background);
 }
-
 
 .logo-image{
   height: 250px;
