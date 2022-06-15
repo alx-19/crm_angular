@@ -1,19 +1,9 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 <div class="user-design">
   <div class="header-main">
-    <div class="dropdown">
-      <button class="selectFilterSearch">Filtres
-        <app-icon-chevron-down></app-icon-chevron-down>
-      </button>
-      <div class="dropdown-child">
-        <a href="#">Nom</a>
-        <a href="#">Connectés</a>
-      </div>
-    </div>
+    <!--    barre de recherche general sur le site avec parentalité pour card-customer-->
     <div class="group-search">
-      <label class="Recherche" for="filteredSearch"></label>
-      <input type="search" id="filteredSearch" name="filteredSearch"
-             placeholder="Rechercher par nom">
+      <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" id="filteredSearch" placeholder="Recherche">
     </div>
     <div id="addProduct" class="adminDisplay">
       <button (click)="openDialogCreateUser()" id="addUserButton">
@@ -24,5 +14,5 @@
   </div>
   <hr>
   <!-- body-main maquette html -->
-  <app-card-user></app-card-user>
+  <app-card-user [searchTerm]="searchTerm"></app-card-user>
 </div>

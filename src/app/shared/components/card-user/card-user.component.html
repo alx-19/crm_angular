@@ -1,4 +1,4 @@
-<div class="card-user" *ngFor="let user of (user$ | async)">
+<div class="card-user" *ngFor="let user of user$ | async | filter : searchTerm">
   <div class="left-card">
     <span class="prenom">{{user.username}}</span>
     <span class="nom">{{user.lastname}}</span>

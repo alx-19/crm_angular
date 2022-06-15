@@ -1,4 +1,4 @@
-<div class="card-customer" *ngFor="let customer of (customer$ | async)">
+<div class="card-customer" *ngFor="let customer of customer$ | async | filter : searchTerm">
   <div class="left-card">
     <span class="prenom">{{customer.firstname}}</span>
     <span class="nom">{{customer.lastname}}</span>
@@ -23,3 +23,4 @@
       </div>
     </button>
   </div>
+</div>
