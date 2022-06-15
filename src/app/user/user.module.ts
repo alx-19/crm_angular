@@ -8,6 +8,7 @@ import { PageReadUserComponent } from './pages/page-read-user/page-read-user.com
 import { PageUpdateUserComponent } from './pages/page-update-user/page-update-user.component';
 import {SharedModule} from "../shared/shared.module";
 import {IconsModule} from "../icons/icons.module";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {IconsModule} from "../icons/icons.module";
         CommonModule,
         UserRoutingModule,
         SharedModule,
-        IconsModule
+        IconsModule,
+        MatButtonModule
     ]
 })
 export class UserModule { }

@@ -14,7 +14,7 @@
 .user-design {
   margin-top: 250px;
   height: calc(100% - 250px);
-  background-color: var(--color-main-background);
+  background-color: var(--color-white);
 }
 
 app-card-user{
@@ -31,7 +31,7 @@ app-card-user{
   justify-content: space-around;
   padding-top: 40px;
   width: 100%;
-  background-color: var(--color-main-background);
+  background-color: var(--color-white);
 }
 
 .selectFilterSearch {
