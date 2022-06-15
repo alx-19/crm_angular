@@ -1,1 +1,30 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
+
+<div class="user-design">
+  <div id="header-main">
+    <h1>Fiche Utilisateur : {{data.username}} {{data.lastname}}</h1>
+  </div>
+
+  <hr>
+
+  <div class="body-main">
+    <div class="bloc-info">
+      <div class="user-information">
+        <h2>Utilisateur</h2>
+        <p>Nom : {{data.lastname}}</p>
+        <p>Prénom : {{data.username}}</p>
+        <p>Mail : {{data.mail}}</p>
+        <p>Numéro de téléphone : {{data.phone}}</p>
+      </div>
+
+      <div class="user-role">
+        <h2>Role Utilisateur</h2>
+        <p>Role: {{data.role}}</p>
+      </div>
+
+    </div>
+    <button mat-stroked-button class="quitButton" [routerLink]="['/breizhouse/users/list']">Quitter</button>
+
+
+  </div>
+</div>
