@@ -13,6 +13,7 @@ import {DialogCreateUserComponent} from "../../../shared/components/dialog-creat
 export class PageListUsersComponent implements OnInit {
 
   public titreHeader = "UTILISATEURS";
+  public searchTerm! : string;
 
   public user$!: Observable<UserM[]>
 

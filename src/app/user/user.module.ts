@@ -7,6 +7,7 @@ import { PageReadUserComponent } from './pages/page-read-user/page-read-user.com
 import {SharedModule} from "../shared/shared.module";
 import {IconsModule} from "../icons/icons.module";
 import {MatButtonModule} from "@angular/material/button";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {MatButtonModule} from "@angular/material/button";
         UserRoutingModule,
         SharedModule,
         IconsModule,
-        MatButtonModule
+        MatButtonModule,
+        FormsModule
     ]
 })
 export class UserModule { }

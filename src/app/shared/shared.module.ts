@@ -1,68 +1,68 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LogoComponent } from './components/logo/logo.component';
-import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {LogoComponent} from './components/logo/logo.component';
+import {NavMenuComponent} from './components/nav-menu/nav-menu.component';
 import {IconsModule} from "../icons/icons.module";
 import {RouterModule} from "@angular/router";
-import { NavProfilMenuComponent } from './components/nav-profil-menu/nav-profil-menu.component';
-import { HeaderComponent } from './components/header/header.component';
-import { CardCustomerComponent } from './components/card-customer/card-customer.component';
-import { CardProductComponent } from './components/card-product/card-product.component';
-import { CardUserComponent } from './components/card-user/card-user.component';
+import {NavProfilMenuComponent} from './components/nav-profil-menu/nav-profil-menu.component';
+import {HeaderComponent} from './components/header/header.component';
+import {CardCustomerComponent} from './components/card-customer/card-customer.component';
+import {CardProductComponent} from './components/card-product/card-product.component';
+import {CardUserComponent} from './components/card-user/card-user.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
-import { DialogCreateCustomerComponent } from './components/dialog-create-customer/dialog-create-customer.component';
+import {DialogCreateCustomerComponent} from './components/dialog-create-customer/dialog-create-customer.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatIconModule} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { DialogReadCustomerComponent } from './components/dialog-read-customer/dialog-read-customer.component';
+import {DialogReadCustomerComponent} from './components/dialog-read-customer/dialog-read-customer.component';
 import {CardCustomerModalComponent} from "./components/card-customer-modal/card-customer-modal.component";
-import { DialogCreateProductComponent } from './components/dialog-create-product/dialog-create-product.component';
-import { DialogCreateUserComponent } from './components/dialog-create-user/dialog-create-user.component';
+import {DialogCreateProductComponent} from './components/dialog-create-product/dialog-create-product.component';
+import {DialogCreateUserComponent} from './components/dialog-create-user/dialog-create-user.component';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 
-
 @NgModule({
-    declarations: [
-        LogoComponent,
-        NavMenuComponent,
-        NavProfilMenuComponent,
-        HeaderComponent,
-        CardCustomerComponent,
-        CardProductComponent,
-        CardUserComponent,
-        CardCustomerModalComponent,
-        DialogCreateCustomerComponent,
-        DialogReadCustomerComponent,
-        DialogCreateProductComponent,
-        DialogCreateUserComponent
-    ],
-    exports: [
-        LogoComponent,
-        NavMenuComponent,
-        NavProfilMenuComponent,
-        HeaderComponent,
-        CardCustomerComponent,
-        CardProductComponent,
-        CardUserComponent,
-        DialogCreateCustomerComponent
-    ],
-    imports: [
-        CommonModule,
-        IconsModule,
-        RouterModule,
-        MatDialogModule,
-        MatButtonModule,
-        MatFormFieldModule,
-        MatIconModule,
-        MatInputModule,
-        MatSelectModule,
-        ReactiveFormsModule,
-        Ng2SearchPipeModule,
-      FormsModule
-    ]
+  declarations: [
+    LogoComponent,
+    NavMenuComponent,
+    NavProfilMenuComponent,
+    HeaderComponent,
+    CardCustomerComponent,
+    CardProductComponent,
+    CardUserComponent,
+    CardCustomerModalComponent,
+    DialogCreateCustomerComponent,
+    DialogReadCustomerComponent,
+    DialogCreateProductComponent,
+    DialogCreateUserComponent
+  ],
+  exports: [
+    LogoComponent,
+    NavMenuComponent,
+    NavProfilMenuComponent,
+    HeaderComponent,
+    CardCustomerComponent,
+    CardProductComponent,
+    CardUserComponent,
+    DialogCreateCustomerComponent
+  ],
+  imports: [
+    CommonModule,
+    IconsModule,
+    RouterModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    Ng2SearchPipeModule,
+    FormsModule
+  ]
 })
-export class SharedModule { }
+export class SharedModule {
+}

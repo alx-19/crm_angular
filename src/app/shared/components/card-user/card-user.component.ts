@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
 import {UserM} from "../../models/user-m";
 import {UserService} from "../../../user/services/user.service";
@@ -11,6 +11,9 @@ import {DialogCreateUserComponent} from "../dialog-create-user/dialog-create-use
   styleUrls: ['./card-user.component.css']
 })
 export class CardUserComponent implements OnInit {
+
+  @Input()
+  public searchTerm!: string;
 
   public user$!: Observable<UserM[]>
 

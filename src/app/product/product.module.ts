@@ -6,6 +6,7 @@ import { PageListProductsComponent } from './pages/page-list-products/page-list-
 import { PageReadProductComponent } from './pages/page-read-product/page-read-product.component';
 import {SharedModule} from "../shared/shared.module";
 import {IconsModule} from "../icons/icons.module";
+import {FormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 
 
@@ -19,6 +20,7 @@ import {MatButtonModule} from "@angular/material/button";
     ProductRoutingModule,
     SharedModule,
     IconsModule,
+    FormsModule,
     MatButtonModule
   ]
 })

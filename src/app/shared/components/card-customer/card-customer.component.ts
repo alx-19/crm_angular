@@ -18,16 +18,13 @@ export class CardCustomerComponent implements OnInit {
 
   public customer$!: Observable<CustomerM[]>
 
-
   constructor(private customerService: CustomerService,
               public dialog: MatDialog,
               private customer: CustomerService) {
-
   }
 
   ngOnInit(): void {
     this.customer$ = this.customerService.getCollection();
-
   }
 
   refreshPage(){

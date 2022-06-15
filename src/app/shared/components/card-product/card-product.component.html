@@ -1,4 +1,4 @@
-<div *ngFor="let product of (product$ | async)">
+<div *ngFor="let product of product$ | async | filter : searchTerm">
   <a class="readProductButton">
     <div class="card-product">
       <div class="card-product-img">
