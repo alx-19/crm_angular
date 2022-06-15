@@ -1,17 +1,26 @@
-<div *ngFor="let user of (user$ | async)" xmlns="http://www.w3.org/1999/html">
-  <a [routerLink]="['/breizhouse/users/read']" class="readUserButton">
-    <div class="card-user">
-      <div class="card-user-img">
-        <img src="{{user.url}}" alt="Photo utilisateur 1">
+<div class="card-user" *ngFor="let user of (user$ | async)">
+  <div class="left-card">
+    <span class="prenom">{{user.username}}</span>
+    <span class="nom">{{user.lastname}}</span>
+    <span class="nom">{{user.role}}</span>
+    <span class="phone">{{user.phone}}</span>
+    <span class="mail">{{user.mail}}</span>
+  </div>
+  <div class="right-card">
+    <button [routerLink]="['users/' + user.id]" class="readUserButton">
+      <div class="iconify-button">
+        <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
       </div>
-      <div class="card-user-details">
-        <span><img class="card-user-connect" src="{{user.connexion}}"
-                   alt="connected"></span>
-        <h3 class="card-user-title">{{user.nom}} {{user.prenom}}</h3>
-        <p class="card-user-grants">{{user.statut}}</p>
-        <p class="card-user-mail">{{user.mail}}</p>
-        <p class="card-user-phone">{{user.mobile}}</p>
+    </button>
+    <button (click)="editUser(user)" class="updateUserButton">
+      <div class="iconify-button">
+        <app-icon-square-pen class="iconify"></app-icon-square-pen>
       </div>
-    </div>
-  </a>
+    </button>
+    <button (click)="deleteUser(user.id)" class="deleteUserButton">
+      <div class="iconify-button">
+        <app-icon-trash class="iconify"></app-icon-trash>
+      </div>
+    </button>
+  </div>
 </div>

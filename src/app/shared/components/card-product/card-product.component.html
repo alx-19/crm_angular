@@ -2,14 +2,60 @@
   <a class="readProductButton">
     <div class="card-product">
       <div class="card-product-img">
-        <img src="{{product.url}}" alt="Photo maison {{product.nom}}">
+        <img src="{{product.urlPhoto}}" alt="Photo maison {{product.modelName}}">
       </div>
       <div class="card-product-details">
-        <h3 class="card-product-title">{{product.nom}}</h3>
-        <p class="card-product-type">{{product.type}}</p>
+        <h3 class="card-product-title">{{product.modelName}}</h3>
+        <p class="card-product-type">{{product.dwellingType}}</p>
         <p class="card-product-text">à partir de</p>
-        <p class="card-product-price">{{product.tarif}}</p>
+        <p class="card-product-price">{{product.price}}</p>
       </div>
+      <div class="right-card">
+        <button [routerLink]="['products/' + product.id]" class="readCustomerButton">
+          <div class="iconify-button">
+            <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
+          </div>
+        </button>
+        <button (click)="editProduct(product)" class="updateCustomerButton">
+          <div class="iconify-button">
+            <app-icon-square-pen class="iconify"></app-icon-square-pen>
+          </div>
+        </button>
+        <button (click)="deleteProduct(product.id)" class="deleteCustomerButton">
+          <div class="iconify-button">
+            <app-icon-trash class="iconify"></app-icon-trash>
+          </div>
+        </button>
+      </div>
+
     </div>
   </a>
 </div>
+
+<!-- <div class="card-customer" *ngFor="let product of (product$ | async)">
+  <div class="left-card">
+    <img src="{{product.url}}" alt="Photo maison {{product.nom}}">
+  </div>
+  <div class="card-product-details">
+    <h3 class="card-product-title">{{product.nom}}</h3>
+    <p class="card-product-type">{{product.type}}</p>
+    <p class="card-product-text">à partir de</p>
+    <p class="card-product-price">{{product.tarif}}</p>
+  </div>
+  <div class="right-card">
+    <button class="readCustomerButton">
+      <div class="iconify-button">
+        <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
+      </div>
+    </button>
+    <button class="updateCustomerButton">
+      <div class="iconify-button">
+        <app-icon-square-pen class="iconify"></app-icon-square-pen>
+      </div>
+    </button>
+    <button class="deleteCustomerButton">
+      <div class="iconify-button">
+        <app-icon-trash class="iconify"></app-icon-trash>
+      </div>
+    </button>
+  </div> -->

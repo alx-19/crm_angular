@@ -23,15 +23,15 @@ export class UserService {
     return this.httpClient.get<UserM[]>(this.url);
   }
 
-  deleteItemById(id:number): Observable<void> {
+  deleteUser(id:number): Observable<void> {
     return this.httpClient.delete<void>(this.url + '/' +id);
   }
 
-  updateItem(user : UserM): Observable<UserM> {
-    return this.httpClient.put<UserM>(this.url + '/' + user.id, user);
+  putUser(user : UserM, id: number): Observable<UserM> {
+    return this.httpClient.put<UserM>(this.url + '/' + id, user);
   }
 
-  addItem(user : UserM): Observable<void> {
+  postUser(user : UserM): Observable<void> {
     return this.httpClient.post<void>(this.url, user);
   }
 }

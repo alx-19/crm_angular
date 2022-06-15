@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'list', pathMatch: 'full'},
   { path: 'list', component: PageListProductsComponent},
   { path: 'create', component: PageCreateProductComponent},
-  { path: 'read', component: PageReadProductComponent},
+  { path: 'list/products/:id', component: PageReadProductComponent},
   { path: 'update', component: PageUpdateProductComponent}
 ];
 

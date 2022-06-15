@@ -1,60 +1,164 @@
-.readUserButton {
-  text-decoration-color: transparent;
-  text-decoration-line: none;
-  color: black;
-}
-
-.card-user {
+.card-user{
+  border: 1px solid var(--color-bleu);
+  border-radius: 4px;
+  width: 350px;
+  height: 180px;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid var(--color-bleu);
-  border-radius: 4px;
-  width: 300px;
-  height: 140px;
-  background-color: var(--color-white);
-  text-decoration: none;
-  margin: 30px;
-  filter: drop-shadow(0px 4px 4px var(--color-boxshadow));
+  filter: drop-shadow(0px 4px 4px var(--color-text-shadow));
+  margin : 10px
 }
 
-.card-user-img {
-  display: flex;
-}
-
-.card-user-details {
+.left-card {
+  font-family: 'Montserrat', serif;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 80%;
+}
+
+.right-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+.readUserButton {
+  background-color: var(--color-client-background);
+  border: var(--color-client-background) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
   justify-content: center;
-  align-content: space-between;
-  font-style: normal;
-  margin: 0 auto;
-}
-
-.card-user-title {
-  color: var(--color-vert);
-  font-weight: bold;
-  margin: 5px;
-}
-
-.card-user-connect {
-  float: right;
-  width: 8%;
-  margin-right: 2px;
-}
-
-.card-user-grants {
-  margin: 5px;
-}
-
-.card-user-mail {
-  margin: 5px;
-}
-
-.card-user-phone {
   align-items: center;
-  color: var(--color-vert);
-  font-weight: bold;
-  margin: 5px;
+  cursor: pointer;
+  padding: 15px;
 }
+
+.updateUserButton {
+  background-color: var(--color-modifier-client-vignette);
+  border: var(--color-modifier-client-vignette) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.deleteUserButton {
+  background-color: var(--color-supprimer-client-vignette);
+  border: var(--color-supprimer-client-vignette) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.role {
+  font-family: 'Montserrat', serif;
+  font-size: 13px;
+  color: var(--color-bleu);
+  margin-bottom: 10px;
+}
+
+.phone {
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  color: var(--color-vert);
+}
+
+.mail {
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  color: var(--color-vert);
+}
+
+.modal-container{
+  width: 350px;
+  height: 180px;
+}
+
+
+.overlay{
+
+}
+
+.modal{
+  width: 350px;
+  height: auto;
+  padding: 10px;
+  background: var(--color-white);
+  border : #0D2A44 solid 1px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); ;
+}
+
+.close-modal{
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: red;
+  color: var(--color-white);
+}
+
+.modal h1{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cancel-button{
+  border: #0D2A44 1px solid;
+  border-radius: 40px;
+  background-color: var(--color-button-annuler);
+  color: var(--color-white);
+  height: 50px;
+  width: 130px;
+}
+
+.delete-button{
+  border: #0D2A44 1px solid;
+  border-radius: 40px;
+  background-color: var(--color-supprimer-client-vignette);
+  color: var(--color-white);
+  height: 50px;
+  width: 130px;
+}
+
+
+
+
+

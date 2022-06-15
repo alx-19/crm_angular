@@ -8,40 +8,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index : 2
+  z-index: 2;
 }
 
-.customer-design{
-  margin-top: 250px;
-  height: calc(100% - 250px);
-  background-color: var(--color-main-background);
-}
-
-
-
-.header-main{
+.customer-design {
   display: flex;
-  justify-content: space-around;
-  padding-top: 40px;
-  width: 100%;
-  background-color: var(--color-main-background);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 250px);
+  margin-top: 250px;
+  background-color: #E1EBDB;
 }
+
+
+#header-main {
+  margin-top: 40px;
+  width: 90%;
+
+}
+
+#previousPageIcon{
+  background-color: var(--color-bleu);
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  text-align: center
+}
+
 h1{
   text-align: center;
-  font-size: xx-large;
+}
 
+h2{
+  color: var(--color-vert);
 }
 hr{
-  background-color: #E1EBDB;
-  color : var(--color-bleu);
-  width: 90%;
-  text-align: center;
-  margin-top: 20px;
+  width: 85%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border : var(--color-bleu) solid 0.5px;
+}
 
+
+
+.body-main{
+  background-color: #FFFFFF;
+  width: 75%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
 }
-.back-button {
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-bleu);
-  color : var(--color-white);
+
+.bloc-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.quitButton{
+  color : var(--color-bleu);
+  margin-top: 5%;
+}
+
+
