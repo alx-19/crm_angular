@@ -28,7 +28,7 @@ export class PageReadCustomerComponent implements OnInit {
   getItemById(){
   this.customerService.getItemById(this.id).subscribe(data=>{
     this.data = data;
-    console.log(this.data)
+    console.log(this.data);
   })
   }
 }

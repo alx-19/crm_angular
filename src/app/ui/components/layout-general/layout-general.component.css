@@ -19,7 +19,7 @@
   width: calc(100vw - 22vw);
   height: 100vh;
   margin-left: 22vw;
-  background-color: var(--color-main-background);
+  background-color: var(--color-white);
 }
 
 .logo-image{
