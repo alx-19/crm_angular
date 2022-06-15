@@ -1,9 +1,9 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 <div class="product-design">
-  <div id="header-main">
+  <div class="header-main">
     <div class="dropdown">
-      <button class="selectFilterSearch">Filtres <span class="iconify" data-icon="tabler:chevron-down"
-                                                       style="color: white;"></span>
+      <button class="selectFilterSearch">Filtres
+        <app-icon-chevron-down></app-icon-chevron-down>
       </button>
       <div class="dropdown-child">
         <a href="#">Nom modèle</a>
@@ -15,11 +15,11 @@
       <input type="search" id="filteredSearch" name="filteredSearch"
              placeholder="Rechercher par nom de modèle">
     </div>
-    <div id="addProduct" class="adminDisplay">
-      <a (click)="openDialogCreateCustomer()" id="addProductButton">
+    <div id="addProduct">
+      <button (click)="openDialogCreateCustomer()" id="addProductButton">
         <app-icon-square-plus></app-icon-square-plus>
-        <span id="addProductText">Ajouter un nouveau produit</span>
-      </a>
+        <span class="addProductText">Ajouter un nouveau produit</span>
+      </button>
     </div>
   </div>
   <hr>

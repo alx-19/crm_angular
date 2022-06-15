@@ -3,10 +3,7 @@ import { MatDialog } from '@angular/material/dialog'
 import {Observable} from "rxjs";
 import {CustomerM} from "../../models/customer-m";
 import {CustomerService} from "../../../customer/services/customer.service";
-import {CardCustomerModalComponent} from "../card-customer-modal/card-customer-modal.component";
 import {DialogCreateCustomerComponent} from "../dialog-create-customer/dialog-create-customer.component";
-import {DialogReadCustomerComponent} from "../dialog-read-customer/dialog-read-customer.component";
-
 
 
 @Component({
@@ -30,24 +27,22 @@ export class CardCustomerComponent implements OnInit {
 
   }
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(CardCustomerModalComponent, {});
-
-    dialogRef.afterClosed().subscribe(() => {
-      console.log('The dialog was closed');
-    });
-
-
+  refreshPage(){
+    this.customer$ = this.customerService.getCollection();
   }
+
 
   editCustomer(customer: CustomerM) {
     this.dialog.open(DialogCreateCustomerComponent, {
       width: '45%',
       data: customer
     })
+    this.refreshPage();
   }
 
   deleteCustomer(id: number){
+    let conf = confirm("Etes-vous sûr de vouloir de supprimer ? ");
+    if (conf)
     this.customer.deleteCustomer(id)
       .subscribe({
         next: ()=>{
@@ -56,11 +51,9 @@ export class CardCustomerComponent implements OnInit {
         error:()=>{
           alert("Erreur lors de la suppression du CLient")
         }})
+        this.refreshPage();
   }
 
-  openDialogReadCustomer(){
-    this.dialog.open(DialogReadCustomerComponent, {
-      width: '75%'
-    })
-  }
+
+
 }

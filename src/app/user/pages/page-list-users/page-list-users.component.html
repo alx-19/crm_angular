@@ -1,9 +1,9 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 <div class="user-design">
-  <div id="header-main">
+  <div class="header-main">
     <div class="dropdown">
-      <button class="selectFilterSearch">Filtres <span class="iconify" data-icon="tabler:chevron-down"
-                                                       style="color: white;"></span>
+      <button class="selectFilterSearch">Filtres
+        <app-icon-chevron-down></app-icon-chevron-down>
       </button>
       <div class="dropdown-child">
         <a href="#">Nom</a>
@@ -16,13 +16,13 @@
              placeholder="Rechercher par nom">
     </div>
     <div id="addProduct" class="adminDisplay">
-      <a [routerLink]="['/breizhouse/users/create']" id="addUserButton">
+      <button (click)="openDialogCreateUser()" id="addUserButton">
         <app-icon-square-plus></app-icon-square-plus>
-        <span id="addUserText">Ajouter un nouvel utilisateur</span>
-      </a>
+        <span class="addUserText">Ajouter un nouvel utilisateur</span>
+      </button>
     </div>
   </div>
   <hr>
   <!-- body-main maquette html -->
-  <app-card-user id="group-user-card"></app-card-user>
+  <app-card-user></app-card-user>
 </div>

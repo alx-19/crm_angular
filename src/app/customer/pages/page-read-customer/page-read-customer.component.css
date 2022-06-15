@@ -22,13 +22,28 @@
   background-color: #E1EBDB;
 }
 
+
 #header-main {
-  display: flex;
-  justify-content: flex-start;
   margin-top: 40px;
   width: 90%;
+
 }
 
+#previousPageIcon{
+  background-color: var(--color-bleu);
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  text-align: center
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  color: var(--color-vert);
+}
 hr{
   width: 85%;
   margin-top: 35px;
@@ -36,247 +51,25 @@ hr{
   border : var(--color-bleu) solid 0.5px;
 }
 
-#previousPage {
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-  align-items: center;
-  background-color: var(--color-bleu);
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-}
 
 
-#formReadCustomer {
-  width: calc(100vw - 564px);
+.body-main{
+  background-color: #FFFFFF;
+  width: 75%;
+  padding: 4%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin: 20px;
 }
 
-.customerFieldset {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-white);
-  box-shadow: 0 12px 12px var(--color-boxshadow);
-  border: 1px solid var(--color-gris);
-  border-radius: 5px;
-
-  width: calc(100vw - 400px);
-}
-
-#customerFieldsetTop {
+.bloc-info{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
-#customerLeft, #customerMiddle, #customerRight {
-  display: flex;
-  flex-direction: column;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-#customerStreetNumberField{
-  width: 30%;
-  margin-right: 20px;
-}
-
-#customerStreetTypeField{
-  width: 60%;
-  margin-left: 20px;
-}
-
-#streetNumberAndType {
-  display: flex;
-  flex-direction: row;
-}
-
-#customerFieldSetBottom {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-#cutomerFieldsetTextarea{
-  min-width: 100%;
-}
-
-#customerNotes {
-  min-width: 100%;
-  min-height: 200px;
-}
-
-.formLabel {
-  align-items: center;
-  margin-bottom: 8px;
-  font-size: 24px;
-}
-
-.formInput {
-  height: 30px;
-}
-
-.formFileInput {
-  align-self: center;
-  font-family: montserrat, serif;
-  color: var(--color-white);
-  background: var(--color-bleu);
-  border: 0;
-  border-radius: 5px;
-  width: 400px;
-  opacity: 70%;
-}
-
-.readCustomerLabel {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 400px;
-}
-
-#buttonDeleteCustomer{
-  width: 200px;
-  height: 63px;
-  align-self: center;
-  font-family: montserrat, serif;
-  color: var(--color-white);
-  background: var(--color-supprimer-client-vignette);
-  border : 0;
-  border-radius: 10px;
-  opacity: 60%;
-  margin-top: 20px;
-  margin-right: 40px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-#buttonUpdateCustomer{
-  width: 200px;
-  height: 63px;
-  align-self: center;
-  font-family: montserrat, serif;
-  color: var(--color-white);
-  background: var(--color-bleu);
-  text-decoration: none;
-  border : 0;
-  border-radius: 10px;
-  opacity: 1;
-  margin-top: 20px;
-  margin-left: 40px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-#buttonDeleteCustomer:hover {
-  opacity: 1;
-}
-
-#buttonUpdateCustomer:hover {
-  opacity: 0.6;
-}
-
-#modalDeleteCustomer {
-  display: none;
-  flex-direction: column;
-  background: var(--color-white) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 12px 12px var(--color-boxshadow);
-  border: 1px solid var(--color-gris);
-  border-radius: 5px;
-  opacity: 1;
-  height: 300px;
-  width: 600px;
-  font-family: montserrat, serif;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+.quitButton{
+  color : var(--color-bleu);
+  margin-top: 5%;
 }
 
 
-/* Float cancel and delete buttons and add an equal width */
-.cancelbtn, .deletebtn {
-  width: 200px;
-  height: 40px;
-  align-self: center;
-  margin: 5px;
-}
-
-/* Add a color to the cancel button */
-.cancelbtn {
-  background-color: var(--color-gris-clair);
-  color: var(--color-white);
-  font-weight: bold;
-}
-
-/* Add a color to the delete button */
-.deletebtn {
-  background-color: var(--color-vert);
-  color: var(--color-white);
-  font-weight: bold;
-}
-
-/* Add padding and center-align text to the container */
-.container {
-  padding: 5px;
-  text-align: center;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 80%; /* Full width */
-  height: 80%; /* Full height */
-  background-color: #474e5d;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* The Modal Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: var(--color-supprimer-client-vignette);
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and delete button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .deletebtn {
-    width: 100%;
-  }
-}

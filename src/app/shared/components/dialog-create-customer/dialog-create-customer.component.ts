@@ -13,8 +13,8 @@ import {CustomerM} from "../../models/customer-m";
 export class DialogCreateCustomerComponent implements OnInit {
 
   createCustomerForm!: FormGroup;
-  actionBtn: string = "Ajouter Client"
-  title: string = "Ajouter un Client"
+  actionBtn: string = "Ajouter Client";
+  title: string = "Ajouter un Client";
 
   constructor(private formBuilder: FormBuilder,
               private customer : CustomerService,
@@ -72,7 +72,7 @@ export class DialogCreateCustomerComponent implements OnInit {
           })
       }
     } else {
-      this.updateCustomer()
+      this.updateCustomer();
 
     }
   }
@@ -80,7 +80,7 @@ export class DialogCreateCustomerComponent implements OnInit {
     this.customer.putCustomer(this.createCustomerForm.value,this.editData.id)
       .subscribe({
         next:()=>{
-          alert("Le client à bien été modifié");
+          alert("Le client a bien été modifié");
           this.createCustomerForm.reset();
           this.dialogRef.close('update');
         },

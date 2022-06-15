@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs";
 import {ProductM} from "../../../shared/models/product-m";
 import {ProductService} from "../../services/product.service";
-import {
-  DialogCreateCustomerComponent
-} from "../../../shared/components/dialog-create-customer/dialog-create-customer.component";
 import {MatDialog} from "@angular/material/dialog";
+import {
+  DialogCreateProductComponent
+} from "../../../shared/components/dialog-create-product/dialog-create-product.component";
 
 @Component({
   selector: 'app-page-list-products',
@@ -26,7 +26,7 @@ export class PageListProductsComponent implements OnInit {
   }
 
   openDialogCreateCustomer() {
-    this.dialog.open(DialogCreateCustomerComponent, {
+    this.dialog.open(DialogCreateProductComponent, {
       width: '45%'
     }).afterClosed().subscribe(value => {
       if(value == 'save'){
