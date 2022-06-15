@@ -19,7 +19,7 @@
   align-items: center;
   height: calc(100% - 250px);
   margin-top: 250px;
-  background-color: #E1EBDB;
+  background-color: var(--color-white);
 }
 
 
@@ -47,7 +47,7 @@ hr{
 
 
 .body-main{
-  background-color: #FFFFFF;
+  background-color: var(--color-main-background);
   width: 75%;
   padding: 4%;
   display: flex;
@@ -58,4 +58,10 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.quitButton{
+  color : var(--color-bleu);
+  margin-top: 5%;
+  background-color: var(--color-white);
 }
