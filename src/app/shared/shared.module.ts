@@ -16,11 +16,12 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatIconModule} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DialogReadCustomerComponent } from './components/dialog-read-customer/dialog-read-customer.component';
 import {CardCustomerModalComponent} from "./components/card-customer-modal/card-customer-modal.component";
 import { DialogCreateProductComponent } from './components/dialog-create-product/dialog-create-product.component';
 import { DialogCreateUserComponent } from './components/dialog-create-user/dialog-create-user.component';
+import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 
 
@@ -59,7 +60,9 @@ import { DialogCreateUserComponent } from './components/dialog-create-user/dialo
         MatIconModule,
         MatInputModule,
         MatSelectModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        Ng2SearchPipeModule,
+      FormsModule
     ]
 })
 export class SharedModule { }

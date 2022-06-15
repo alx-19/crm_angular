@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog'
 import {Observable} from "rxjs";
 import {CustomerM} from "../../models/customer-m";
@@ -13,8 +13,11 @@ import {DialogCreateCustomerComponent} from "../dialog-create-customer/dialog-cr
 })
 export class CardCustomerComponent implements OnInit {
 
+  @Input()
+  public searchTerm!: string;
 
   public customer$!: Observable<CustomerM[]>
+
 
   constructor(private customerService: CustomerService,
               public dialog: MatDialog,

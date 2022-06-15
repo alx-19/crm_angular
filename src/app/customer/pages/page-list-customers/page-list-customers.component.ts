@@ -15,6 +15,8 @@ import {
 export class PageListCustomersComponent implements OnInit {
 
   public titreHeader = "CLIENTS";
+  public searchTerm! : string;
+
 
   constructor(private dialog : MatDialog,
               private customer : CustomerService) { }
