@@ -1,7 +1,7 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 <div class="product-design">
   <div id="header-main">
-    <h1>Fiche Produit : {{data.modelName}} </h1>
+    <h1>Fiche Produit : {{data.name}} </h1>
   </div>
 
   <hr>
@@ -9,13 +9,12 @@
   <div class="body-main">
     <div class="bloc-info">
 
-      <div><p class="attribut">Nom : </p> {{data.modelName}}</div>
-      <div><p class="attribut">Référence : </p> {{data.reference}}</div>
-      <div><p class="attribut">Type de loggement :</p> {{data.dwellingType}}</div>
-      <div><p class="attribut">Superficie : </p>{{data.dwellingType}}</div>
-      <div><p class="attribut">Prix :</p> {{data.price}} </div>
+      <div><p class="attribut">Nom : </p> {{data.name}}</div>
+      <div><p class="attribut">Type de loggement :</p> {{data.type}}</div>
+      <div><p class="attribut">Superficie : </p>{{data.surface}}</div>
+      <div><p class="attribut">Prix :</p> {{data.priceHt}} </div>
       <div><p class="attribut">Description :</p> {{data.description}}</div>
-      <div><p class="attribut">URL Photo :</p> {{data.urlPhoto}}</div>
+      <div><p class="attribut">URL Photo :</p> {{data.photoUrl}}</div>
 
 
     </div>

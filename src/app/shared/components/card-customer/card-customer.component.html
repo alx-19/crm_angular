@@ -1,4 +1,5 @@
 <div class="card-customer" *ngFor="let customer of customer$ | async | filter : searchTerm">
+
   <div class="left-card">
     <span class="prenom">{{customer.firstname}}</span>
     <span class="nom">{{customer.lastname}}</span>
@@ -6,17 +7,20 @@
     <span class="phone">{{customer.mobileNumber}}</span>
     <span class="mail">{{customer.mail}}</span>
   </div>
+
   <div class="right-card">
     <button [routerLink]="['customers/' + customer.id]" class="readCustomerButton">
       <div class="iconify-button">
         <app-icon-magnifying-class class="iconify"></app-icon-magnifying-class>
       </div>
     </button>
+
     <button (click)="editCustomer(customer)" class="updateCustomerButton">
       <div class="iconify-button">
         <app-icon-square-pen class="iconify"></app-icon-square-pen>
       </div>
     </button>
+
     <button (click)="deleteCustomer(customer.id)" class="deleteCustomerButton">
       <div class="iconify-button">
         <app-icon-trash class="iconify"></app-icon-trash>

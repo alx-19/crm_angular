@@ -27,7 +27,7 @@ export class DialogCreateCustomerComponent implements OnInit {
       firstname: ['', Validators.required],
       lastname: ['', Validators.required],
       mail: ['', Validators.required],
-      mobileNumber: ['', Validators.required],
+      mobile: ['', Validators.required],
       streetNumber: ['', Validators.required],
       streetType: ['', Validators.required],
       streetName: ['', Validators.required],
@@ -44,7 +44,7 @@ export class DialogCreateCustomerComponent implements OnInit {
       this.createCustomerForm.controls['firstname'].setValue(this.editData.firstname);
       this.createCustomerForm.controls['lastname'].setValue(this.editData.lastname);
       this.createCustomerForm.controls['mail'].setValue(this.editData.mail);
-      this.createCustomerForm.controls['mobileNumber'].setValue(this.editData.mobileNumber);
+      this.createCustomerForm.controls['mobile'].setValue(this.editData.mobile);
       this.createCustomerForm.controls['streetNumber'].setValue(this.editData.streetNumber);
       this.createCustomerForm.controls['streetType'].setValue(this.editData.streetType);
       this.createCustomerForm.controls['streetName'].setValue(this.editData.streetName);
