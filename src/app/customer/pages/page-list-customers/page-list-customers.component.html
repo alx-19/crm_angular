@@ -3,12 +3,11 @@
 <div class="customer-design">
 
   <div class="header-main">
+<!--    barre de recherche general sur le site avec parentalité pour card-customer-->
     <div class="group-search">
-      <label class="Recherche" for="filteredSearch"></label>
-      <input type="search" id="filteredSearch" name="filteredSearch"
-             placeholder="Rechercher par nom de client">
-
+      <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" id="filteredSearch" placeholder="Recherche">
     </div>
+
     <div id="addCustomer">
       <button (click)="openDialogCreateCustomer()" id="addCustomerGroup">
         <app-icon-square-plus></app-icon-square-plus>
@@ -16,9 +15,7 @@
       </button>
     </div>
   </div>
-
   <hr>
-
-  <app-card-customer></app-card-customer>
+  <app-card-customer [searchTerm]="searchTerm"></app-card-customer>
 </div>
 

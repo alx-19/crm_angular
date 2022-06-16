@@ -6,6 +6,7 @@ import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orde
 import { PageReadOrderComponent } from './pages/page-read-order/page-read-order.component';
 import {SharedModule} from "../shared/shared.module";
 import {IconsModule} from "../icons/icons.module";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {IconsModule} from "../icons/icons.module";
         CommonModule,
         OrderRoutingModule,
         SharedModule,
-        IconsModule
+        IconsModule,
+        FormsModule
     ]
 })
 export class OrderModule { }

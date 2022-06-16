@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
 import {ProductM} from "../../models/product-m";
 import {ProductService} from "../../../product/services/product.service";
@@ -11,6 +11,9 @@ import {DialogCreateProductComponent} from "../dialog-create-product/dialog-crea
   styleUrls: ['./card-product.component.css']
 })
 export class CardProductComponent implements OnInit {
+
+  @Input()
+  public searchTerm!: string;
 
   public product$!: Observable<ProductM[]>
 
@@ -37,7 +40,7 @@ export class CardProductComponent implements OnInit {
   }
 
   deleteProduct(id: number){
-    let conf = confirm("Etes-vous sûr de vouloir de supprimer ? ");
+    let conf = confirm("Etes-vous sûr de vouloir le supprimer ? ");
     if (conf)
       this.product.deleteProduct(id)
         .subscribe({

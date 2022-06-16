@@ -11,6 +11,7 @@ import {DialogCreateOrderComponent} from "../../../shared/components/dialog-crea
 export class PageListOrdersComponent implements OnInit {
 
   public titreHeader = "COMMANDES";
+  public searchTerm!: string;
 
   constructor(private dialog : MatDialog,
               private order : OrderService) { }

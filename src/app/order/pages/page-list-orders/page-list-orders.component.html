@@ -4,9 +4,7 @@
 
   <div class="header-main">
     <div class="group-search">
-      <label class="Recherche" for="filteredSearch"></label>
-      <input type="search" id="filteredSearch" name="filteredSearch"
-             placeholder="Rechercher par nom de client">
+      <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" id="filteredSearch" placeholder="Recherche">
     </div>
     <div id="addOrder">
       <button (click)="openDialogCreateOrder()"  id="addOrderGroup">
@@ -18,6 +16,6 @@
 
   <hr>
 
-  <app-table-order></app-table-order>
+  <app-table-order [searchTerm]="searchTerm" ></app-table-order>
 
 </div>

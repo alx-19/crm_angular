@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog'
 import {Observable} from "rxjs";
 import {CustomerM} from "../../models/customer-m";
@@ -13,6 +13,8 @@ import {DialogCreateCustomerComponent} from "../dialog-create-customer/dialog-cr
 })
 export class CardCustomerComponent implements OnInit {
 
+  @Input()
+  public searchTerm!: string;
 
   public customer$!: Observable<CustomerM[]>
 
@@ -41,7 +43,7 @@ export class CardCustomerComponent implements OnInit {
   }
 
   deleteCustomer(id: number){
-    let conf = confirm("Etes-vous sûr de vouloir de supprimer ? ");
+    let conf = confirm("Etes-vous sûr de vouloir le supprimer ? ");
     if (conf)
     this.customer.deleteCustomer(id)
       .subscribe({

@@ -15,6 +15,8 @@ import {
 export class PageListProductsComponent implements OnInit {
 
   public titreHeader = "PRODUITS";
+  public searchTerm! : string;
+
 
   public product$!: Observable<ProductM[]>
 

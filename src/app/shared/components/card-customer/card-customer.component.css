@@ -59,6 +59,8 @@
   padding: 15px;
 }
 
+
+
 .deleteCustomerButton {
   background-color: var(--color-supprimer-client-vignette);
   border: var(--color-supprimer-client-vignette) solid 0.25px;
