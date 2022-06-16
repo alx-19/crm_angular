@@ -21,20 +21,20 @@
     </mat-form-field>
     <mat-form-field appearance="fill">
       <mat-label>Commercial</mat-label>
-      <mat-select formControlName="user">
-        <mat-option *ngFor="let user of user$ | async" value="{{user.username}} {{user.lastname}}">{{user.username}} {{user.lastname}}</mat-option>
+      <mat-select formControlName="userId">
+        <mat-option *ngFor="let user of user$ | async" [value]="user.id">{{user.username}} {{user.lastname}}</mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field appearance="fill">
       <mat-label>Produit</mat-label>
-      <mat-select formControlName="product">
-        <mat-option *ngFor="let product of product$ | async" value="{{product.modelName}}">{{product.modelName}}</mat-option>
+      <mat-select formControlName="productId">
+        <mat-option *ngFor="let product of product$ | async" [value]="product.id">{{product.name}}</mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field appearance="fill">
       <mat-label>Client</mat-label>
-      <mat-select formControlName="customer">
-        <mat-option *ngFor="let customer of customer$ | async" value="{{customer.firstname}} {{customer.lastname}}">{{customer.firstname}} {{customer.lastname}}</mat-option>
+      <mat-select formControlName="customerId">
+        <mat-option *ngFor="let customer of customer$ | async" [value]="customer.id">{{customer.firstname}} {{customer.lastname}}</mat-option>
       </mat-select>
     </mat-form-field>
   </form>

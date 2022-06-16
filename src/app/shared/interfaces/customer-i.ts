@@ -3,7 +3,7 @@ export interface CustomerI {
   "firstname": string;
   "lastname": string;
   "mail": string;
-  "mobileNumber": number;
+  "mobile": string;
   "streetNumber": number;
   "streetType": string;
   "streetName": string;

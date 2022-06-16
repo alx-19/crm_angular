@@ -3,4 +3,8 @@ export interface OrderI{
   "reference": number;
   "status": string;
   "date": string;
+  "customerId": number;
+  "userId": number;
+  "productId": number;
 }
+

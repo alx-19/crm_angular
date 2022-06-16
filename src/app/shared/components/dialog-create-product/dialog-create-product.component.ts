@@ -34,14 +34,12 @@ export class DialogCreateProductComponent implements OnInit {
     if(this.editData){
       this.actionBtn = "Modifier Produit";
       this.title = "Modifier le CLient";
-      this.createProductForm.controls['reference'].setValue(this.editData.reference);
-      this.createProductForm.controls['modelName'].setValue(this.editData.modelName);
-      this.createProductForm.controls['dwellingType'].setValue(this.editData.dwellingType);
-      this.createProductForm.controls['price'].setValue(this.editData.price);
-      this.createProductForm.controls['livingSpace'].setValue(this.editData.livingSpace);
+      this.createProductForm.controls['modelName'].setValue(this.editData.name);
+      this.createProductForm.controls['dwellingType'].setValue(this.editData.type);
+      this.createProductForm.controls['price'].setValue(this.editData.priceHt);
+      this.createProductForm.controls['livingSpace'].setValue(this.editData.surface);
       this.createProductForm.controls['description'].setValue(this.editData.description);
-      this.createProductForm.controls['urlPhoto'].setValue(this.editData.urlPhoto);
-
+      this.createProductForm.controls['urlPhoto'].setValue(this.editData.photoUrl);
     }
   }
 

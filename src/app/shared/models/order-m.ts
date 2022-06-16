@@ -5,6 +5,9 @@ export class OrderM implements OrderI{
   "reference": 0;
   "status": '';
   "date": '';
+  "customerId" = 0;
+  "userId"= 0;
+  "productId"= 0;
 
 
 }

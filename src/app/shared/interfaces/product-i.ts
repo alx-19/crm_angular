@@ -1,10 +1,9 @@
 export interface ProductI {
   id: number;
-  reference: string;
-  modelName: string;
-  dwellingType: string;
-  price: string;
-  livingSpace: string;
+  name: string;
+  type: string;
+  priceHt: number;
+  surface: number;
   description: string;
-  urlPhoto: string;
+  photoUrl: string;
 }

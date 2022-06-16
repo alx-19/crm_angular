@@ -7,6 +7,6 @@ export class UserM implements UserI{
   mail = '';
   password = '' ;
   phone = '';
-  role = '';
+  grants = '';
 
 }

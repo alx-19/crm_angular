@@ -24,17 +24,17 @@
     <!-- commercial Column -->
     <ng-container matColumnDef="user">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Commercial </th>
-      <td mat-cell *matCellDef="let row"> {{row.user}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.userId}} </td>
     </ng-container>
 
     <ng-container matColumnDef="product">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Maison </th>
-      <td mat-cell *matCellDef="let row"> {{row.product}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.productId}} </td>
     </ng-container>
 
     <ng-container matColumnDef="customer">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Client </th>
-      <td mat-cell *matCellDef="let row"> {{row.customer}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.customerId}} </td>
     </ng-container>
 
     <ng-container matColumnDef="action">

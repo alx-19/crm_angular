@@ -5,7 +5,7 @@ export class CustomerM implements CustomerI{
   "firstname": '';
   "lastname": '';
   "mail": '';
-  "mobileNumber": 1234567891;
+  "mobile": '';
   "streetNumber": 10 ;
   "streetType": '';
   "streetName": '';

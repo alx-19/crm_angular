@@ -2,13 +2,13 @@
   <a class="readProductButton">
     <div class="card-product">
       <div class="card-product-img">
-        <img src="{{product.urlPhoto}}" alt="Photo maison {{product.modelName}}">
+        <img src="{{product.photoUrl}}" alt="Photo maison {{product.name}}">
       </div>
       <div class="card-product-details">
-        <h3 class="card-product-title">{{product.modelName}}</h3>
-        <p class="card-product-type">{{product.dwellingType}}</p>
+        <h3 class="card-product-title">{{product.name}}</h3>
+        <p class="card-product-type">{{product.type}}</p>
         <p class="card-product-text">à partir de</p>
-        <p class="card-product-price">{{product.price}}</p>
+        <p class="card-product-price">{{product.priceHt}}</p>
       </div>
       <div class="right-card">
         <button [routerLink]="['products/' + product.id]" class="readCustomerButton">

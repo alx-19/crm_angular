@@ -47,9 +47,9 @@ export class DialogCreateOrderComponent implements OnInit {
       reference: ['', Validators.required],
       status: ['', Validators.required],
       date: ['', Validators.required],
-      user: ['', Validators.required],
-      product: ['', Validators.required],
-      customer: ['', Validators.required],
+      userId: ['', Validators.required],
+      productId: ['', Validators.required],
+      customerId: ['', Validators.required],
     })
 
     if (this.editData) {
