@@ -1,0 +1,69 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 10px;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+
+td, th {
+  width: 13%;
+}
+
+.mat-elevation-z8{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.group-button{
+  display: flex;
+  flex-direction: row;
+}
+
+.readOrderButton {
+  background-color: var(--color-client-background);
+  border: var(--color-client-background) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.updateOrderButton {
+  background-color: var(--color-modifier-client-vignette);
+  border: var(--color-modifier-client-vignette) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.deleteOrderButton {
+  background-color: var(--color-supprimer-client-vignette);
+  border: var(--color-supprimer-client-vignette) solid 0.25px;
+  width: 25px;
+  height: 25px;
+  color: var(--color-white);
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}

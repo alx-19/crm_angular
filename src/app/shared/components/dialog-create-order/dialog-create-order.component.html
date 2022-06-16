@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="createOrderForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Reference</mat-label>
+      <input formControlName="reference" matInput placeholder="Reference">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Statut Commande</mat-label>
+      <mat-select formControlName="status">
+        <mat-option value="Devis">Devis</mat-option>
+        <mat-option value="Signé">Signé</mat-option>
+        <mat-option value="Production">Production</mat-option>
+        <mat-option value="Livraison">Livraison</mat-option>
+        <mat-option value="Payé">Payé</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Date (format : JJ/MM/AAAA)</mat-label>
+      <input formControlName="date" matInput placeholder="Date : JJ/MM/AAAA">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Commercial</mat-label>
+      <mat-select formControlName="user">
+        <mat-option *ngFor="let user of user$ | async" value="{{user.username}} {{user.lastname}}">{{user.username}} {{user.lastname}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Produit</mat-label>
+      <mat-select formControlName="product">
+        <mat-option *ngFor="let product of product$ | async" value="{{product.modelName}}">{{product.modelName}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Client</mat-label>
+      <mat-select formControlName="customer">
+        <mat-option *ngFor="let customer of customer$ | async" value="{{customer.firstname}} {{customer.lastname}}">{{customer.firstname}} {{customer.lastname}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'center'">
+  <button mat-raised-button color="warn" mat-dialog-close="">Annuler</button>
+  <button mat-raised-button color="primary" (click)="addOrder()">{{actionBtn}}</button>
+</div>
