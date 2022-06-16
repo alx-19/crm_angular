@@ -4,31 +4,16 @@
       "firstname": "Perret",
       "lastname": "Marc",
       "mail": "marc.perrer@perret",
-      "mobileNumber": "0298780775",
+      "mobileNumber": "09909090090",
       "streetNumber": "26",
       "streetType": "Rue",
       "streetName": "De la gloire",
       "streetAditional": "Merci",
       "zipCode": "35000",
       "city": "Rennes",
-      "status": "two",
+      "status": "Production",
       "notes": "Le meilleur",
       "id": 11
-    },
-    {
-      "firstname": "Sans adresse",
-      "lastname": "Natha",
-      "mail": "kiki@mbappe.com",
-      "mobileNumber": "0909090909",
-      "streetNumber": "35",
-      "streetType": "Champs",
-      "streetName": "Elysée",
-      "streetAditional": "TR",
-      "zipCode": "75000",
-      "city": "Paris",
-      "status": "two",
-      "notes": "Meilleur buteur L1",
-      "id": 12
     },
     {
       "firstname": "Deniel",
@@ -44,21 +29,6 @@
       "status": "two",
       "notes": "Livraison imminente ",
       "id": 13
-    },
-    {
-      "firstname": "trou duc",
-      "lastname": "dezd",
-      "mail": "azdazd",
-      "mobileNumber": "090909",
-      "streetNumber": "090",
-      "streetType": "aeed",
-      "streetName": "azdaz",
-      "streetAditional": "azd",
-      "zipCode": "56789",
-      "city": "azdazd",
-      "status": "two",
-      "notes": "qzdazd",
-      "id": 14
     },
     {
       "firstname": "Yann",
@@ -102,13 +72,13 @@
       "role": "USER"
     },
     {
-      "id": 2,
       "username": "Yann",
       "lastname": "Coadour",
       "mail": "yann.coadour@gmail.com",
-      "phone": "0760908002",
       "password": "commercial",
-      "role": "ADMIN"
+      "phone": "0760908999",
+      "role": "ADMIN",
+      "id": 2
     }
   ],
   "products": [
@@ -125,7 +95,7 @@
     {
       "reference": "a definir",
       "modelName": "Modele 2",
-      "dwellingType": "T2/T3",
+      "dwellingType": "T2/T4",
       "price": "114900 euros",
       "livingSpace": "76,4 m2",
       "description": "Belle terrasse",
@@ -201,6 +171,35 @@
       "livingSpace": "61,7 m2",
       "description": "Modèle avec jacuzzi, cave à vin.",
       "urlPhoto": "../../assets/modeles/Modele-9.png"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "reference": "123456",
+      "status": "signé",
+      "date": "15/03/2022",
+      "user": "Coadour Yann",
+      "product": "Maison 1",
+      "customer": "Bourigeaud"
+    },
+    {
+      "reference": "9999",
+      "status": "Production",
+      "date": "03/09/2021",
+      "user": "Yann Coadour",
+      "product": "Modele 9",
+      "customer": "Bourigeaud Benjamin",
+      "id": 4
+    },
+    {
+      "reference": "245678",
+      "status": "Signé",
+      "date": "22/05/2022",
+      "user": "Alexandre Deniel",
+      "product": "Modele 5",
+      "customer": "Perret Marc",
+      "id": 5
     }
   ]
 }

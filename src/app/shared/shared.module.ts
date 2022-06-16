@@ -18,10 +18,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {DialogReadCustomerComponent} from './components/dialog-read-customer/dialog-read-customer.component';
-import {CardCustomerModalComponent} from "./components/card-customer-modal/card-customer-modal.component";
 import {DialogCreateProductComponent} from './components/dialog-create-product/dialog-create-product.component';
 import {DialogCreateUserComponent} from './components/dialog-create-user/dialog-create-user.component';
-import {Ng2SearchPipeModule} from "ng2-search-filter";
+import {Ng2SearchPipe, Ng2SearchPipeModule} from "ng2-search-filter";
+import {TableOrderComponent} from "./components/table-order/table-order.component";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
+import {DialogCreateOrderComponent} from "./components/dialog-create-order/dialog-create-order.component";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatSortModule} from "@angular/material/sort";
 
 
 @NgModule({
@@ -33,11 +38,12 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
     CardCustomerComponent,
     CardProductComponent,
     CardUserComponent,
-    CardCustomerModalComponent,
     DialogCreateCustomerComponent,
     DialogReadCustomerComponent,
     DialogCreateProductComponent,
-    DialogCreateUserComponent
+    DialogCreateUserComponent,
+    TableOrderComponent,
+    DialogCreateOrderComponent
   ],
   exports: [
     LogoComponent,
@@ -47,7 +53,9 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
     CardCustomerComponent,
     CardProductComponent,
     CardUserComponent,
-    DialogCreateCustomerComponent
+    DialogCreateCustomerComponent,
+    TableOrderComponent,
+    DialogCreateOrderComponent
   ],
   imports: [
     CommonModule,
@@ -60,9 +68,17 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
     MatInputModule,
     MatSelectModule,
     ReactiveFormsModule,
+    FormsModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatDatepickerModule,
     Ng2SearchPipeModule,
-    FormsModule
+    MatSortModule
+  ],
+  providers: [
+    Ng2SearchPipe
   ]
+
 })
 export class SharedModule {
 }

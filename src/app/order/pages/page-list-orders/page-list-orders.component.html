@@ -1,2 +1,21 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 
+<div class="order-design">
+
+  <div class="header-main">
+    <div class="group-search">
+      <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" id="filteredSearch" placeholder="Recherche">
+    </div>
+    <div id="addOrder">
+      <button (click)="openDialogCreateOrder()"  id="addOrderGroup">
+        <app-icon-square-plus></app-icon-square-plus>
+        <span class="addCustomerText">Ajouter une nouvelle commande</span>
+      </button>
+    </div>
+  </div>
+
+  <hr>
+
+  <app-table-order [searchTerm]="searchTerm" ></app-table-order>
+
+</div>

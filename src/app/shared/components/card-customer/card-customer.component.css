@@ -1,13 +1,13 @@
 .card-customer {
   border: 1px solid var(--color-bleu);
   border-radius: 4px;
-  width: 350px;
-  height: 180px;
+  width: 300px;
+  height: 175px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   filter: drop-shadow(0px 4px 4px var(--color-text-shadow));
-  margin : 10px;
+  margin : 30px;
   background-color: var(--color-main-background);
 }
 
@@ -58,6 +58,8 @@
   cursor: pointer;
   padding: 15px;
 }
+
+
 
 .deleteCustomerButton {
   background-color: var(--color-supprimer-client-vignette);

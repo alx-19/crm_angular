@@ -9,7 +9,6 @@ import {SharedModule} from "./shared/shared.module";
 import {HttpClientModule} from "@angular/common/http";
 import { BreizhouseComponent } from './core/components/breizhouse/breizhouse.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import {CardCustomerModalComponent} from "./shared/components/card-customer-modal/card-customer-modal.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -29,8 +28,6 @@ import {MatSortModule} from '@angular/material/sort';
 
 
 
-// @ts-ignore
-// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,18 +56,9 @@ import {MatSortModule} from '@angular/material/sort';
     ReactiveFormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
-
-
-  ],
-  exports: [
-    MatDialogModule
-  ],
-  entryComponents: [
-   CardCustomerModalComponent
+    MatSortModule,
   ],
 
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

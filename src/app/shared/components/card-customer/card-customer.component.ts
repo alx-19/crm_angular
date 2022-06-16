@@ -21,10 +21,12 @@ export class CardCustomerComponent implements OnInit {
   constructor(private customerService: CustomerService,
               public dialog: MatDialog,
               private customer: CustomerService) {
+
   }
 
   ngOnInit(): void {
     this.customer$ = this.customerService.getCollection();
+
   }
 
   refreshPage(){
@@ -41,7 +43,7 @@ export class CardCustomerComponent implements OnInit {
   }
 
   deleteCustomer(id: number){
-    let conf = confirm("Etes-vous sûr de vouloir de supprimer ? ");
+    let conf = confirm("Etes-vous sûr de vouloir le supprimer ? ");
     if (conf)
     this.customer.deleteCustomer(id)
       .subscribe({

@@ -40,7 +40,7 @@ export class CardProductComponent implements OnInit {
   }
 
   deleteProduct(id: number){
-    let conf = confirm("Etes-vous sûr de vouloir de supprimer ? ");
+    let conf = confirm("Etes-vous sûr de vouloir le supprimer ? ");
     if (conf)
       this.product.deleteProduct(id)
         .subscribe({
