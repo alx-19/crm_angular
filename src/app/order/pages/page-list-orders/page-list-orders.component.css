@@ -9,3 +9,123 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.order-design{
+  margin-top: 250px;
+  height: calc(100% - 250px);
+  background-color: var(--color-white);
+}
+
+
+.header-main{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  width: 100%;
+  background-color: var(--color-white);
+}
+.selectFilterSearch {
+  background-color: var(--color-bleu);
+  color: var(--color-white);
+  border-radius: 10px;
+  border-color: var(--color-bleu);
+  cursor: pointer;
+  width: 323px;
+  height: 41px;
+  font-size: 20px;
+  font-family: 'Montserrat', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.selectFilterSearch:hover {
+  background-color: var(--color-bleu);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-child {
+  font-family: 'Montserrat', serif;
+  display: none;
+  background-color: var(--color-bleu);
+  min-width: 50px;
+  border-radius: 10px;
+  position: absolute;
+  width: 323px;
+  z-index: 100;
+}
+
+.dropdown-child option {
+  color: var(--color-white);
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-child {
+  display: block;
+}
+
+#filteredSearch{
+  width: 350px;
+  height: 41px;
+  border: var(--color-bleu) solid 1px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Montserrat', serif;
+}
+
+.group-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#addCustomer{
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.iconify-button .iconify {
+  width: 15px;
+  height: 15px;
+}
+
+#addCustomerGroup {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  color: var(--color-bleu);
+  font-family: 'Montserrat', serif;
+  text-decoration: none;
+}
+
+app-icon-square-plus {
+  color: var(--color-bleu);
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+app-icon-square-plus fa-icon{
+  height: 40px;
+}
+
+
+
+hr{
+  background-color: #E1EBDB;
+  color : var(--color-bleu);
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+}

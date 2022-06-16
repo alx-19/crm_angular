@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import {CustomerService} from "../../services/customer.service";
 import {MatDialog} from '@angular/material/dialog';
@@ -20,10 +18,8 @@ export class PageListCustomersComponent implements OnInit {
               private customer : CustomerService) { }
 
   ngOnInit(): void {
-
     this.getAllCustomers();
   }
-
 
   openDialogCreateCustomer() {
     this.dialog.open(DialogCreateCustomerComponent, {

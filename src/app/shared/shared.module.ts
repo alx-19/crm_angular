@@ -21,6 +21,10 @@ import { DialogReadCustomerComponent } from './components/dialog-read-customer/d
 import {CardCustomerModalComponent} from "./components/card-customer-modal/card-customer-modal.component";
 import { DialogCreateProductComponent } from './components/dialog-create-product/dialog-create-product.component';
 import { DialogCreateUserComponent } from './components/dialog-create-user/dialog-create-user.component';
+import { TableOrderComponent } from './components/table-order/table-order.component';
+import { DialogCreateOrderComponent } from './components/dialog-create-order/dialog-create-order.component';
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 
 
@@ -37,7 +41,9 @@ import { DialogCreateUserComponent } from './components/dialog-create-user/dialo
         DialogCreateCustomerComponent,
         DialogReadCustomerComponent,
         DialogCreateProductComponent,
-        DialogCreateUserComponent
+        DialogCreateUserComponent,
+        TableOrderComponent,
+        DialogCreateOrderComponent
     ],
     exports: [
         LogoComponent,
@@ -47,19 +53,22 @@ import { DialogCreateUserComponent } from './components/dialog-create-user/dialo
         CardCustomerComponent,
         CardProductComponent,
         CardUserComponent,
-        DialogCreateCustomerComponent
+        DialogCreateCustomerComponent,
+        TableOrderComponent
     ],
-    imports: [
-        CommonModule,
-        IconsModule,
-        RouterModule,
-        MatDialogModule,
-        MatButtonModule,
-        MatFormFieldModule,
-        MatIconModule,
-        MatInputModule,
-        MatSelectModule,
-        ReactiveFormsModule
-    ]
+  imports: [
+    CommonModule,
+    IconsModule,
+    RouterModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatTableModule,
+    MatPaginatorModule
+  ]
 })
 export class SharedModule { }

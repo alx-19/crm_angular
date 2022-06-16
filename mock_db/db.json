@@ -202,5 +202,20 @@
       "description": "Modèle avec jacuzzi, cave à vin.",
       "urlPhoto": "../../assets/modeles/Modele-9.png"
     }
+
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "reference": "123456",
+      "status": "signé",
+      "date": "15/03/2022"
+    },
+    {
+      "id": 2,
+      "reference": "1122",
+      "status": "devis",
+      "date": "19/03/2022"
+    }
   ]
 }
