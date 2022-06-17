@@ -1,6 +1,7 @@
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 <div class="customer-design">
   <div id="header-main">
+    <!--   Affichage du titre en fonction du nom et prenom du client-->
     <h1>Fiche Client : {{data.firstname}} {{data.lastname}}</h1>
   </div>
 
@@ -10,6 +11,7 @@
     <div class="bloc-info">
       <div class="client-information">
         <h2>Client</h2>
+        <!--Récupération des informations du client sélectionné-->
         <p>Nom : {{data.lastname}}</p>
         <p>Prénom : {{data.firstname}}</p>
         <p>Mail : {{data.mail}}</p>
@@ -17,6 +19,7 @@
       </div>
       <div class="client-adresse">
         <h2>Adresse Client</h2>
+        <!--Récupération des information de l'adresse du client sélectionné-->
         <p>N°: {{data.streetNumber}}</p>
         <p>Type de rue : {{data.streetType}}</p>
         <p>Nom de la rue : {{data.streetName}}</p>
@@ -25,12 +28,14 @@
         <p>Ville : {{data.city}}</p>
       </div>
       <div class="client-other">
+        <!--Récupération des autres information du client sélectionné-->
         <h2>Autres Informations</h2>
         <p>Status de la Commande : {{data.status}}</p>
         <p>Notes : {{data.notes}}</p>
       </div>
 
     </div>
+    <!-- Bouton pour revenir à la page de l'ensemble des clients -->
     <button mat-stroked-button class="quitButton" [routerLink]="['/breizhouse/customers/list']">Quitter</button>
 
 

@@ -1,11 +1,15 @@
+<!--récupération du header avec titre personnalisé-->
 <app-header [textHeader]="titreHeader" class="tr-header"></app-header>
 
 <div class="order-design">
 
   <div class="header-main">
+
+    <!--input de recherche-->
     <div class="group-search">
       <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" id="filteredSearch" placeholder="Recherche">
     </div>
+    <!--boutton pour ouvrir la modal pour créer une nouvelle commande-->
     <div id="addOrder">
       <button (click)="openDialogCreateOrder()"  id="addOrderGroup">
         <app-icon-square-plus></app-icon-square-plus>
@@ -16,6 +20,7 @@
 
   <hr>
 
+  <!--appel du component table-order -->
   <app-table-order [searchTerm]="searchTerm" ></app-table-order>
 
 </div>

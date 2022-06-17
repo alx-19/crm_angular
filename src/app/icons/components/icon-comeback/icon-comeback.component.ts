@@ -9,7 +9,7 @@ import {faRotateLeft} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconComebackComponent implements OnInit {
 
-  public myIcon: IconDefinition = faRotateLeft;
+  public myIcon: IconDefinition = faRotateLeft; // récupération de l'icon via fontawesone
 
   constructor() { }
 

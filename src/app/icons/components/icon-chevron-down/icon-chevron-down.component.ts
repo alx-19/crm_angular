@@ -9,7 +9,7 @@ import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconChevronDownComponent implements OnInit {
 
-  public myIcon: IconDefinition = faChevronDown;
+  public myIcon: IconDefinition = faChevronDown; // récupération de l'icon via fontawesone
 
   constructor() { }
 

@@ -58,6 +58,9 @@ export class DialogCreateOrderComponent implements OnInit {
       this.createOrderForm.controls['reference'].setValue(this.editData.reference);
       this.createOrderForm.controls['status'].setValue(this.editData.status);
       this.createOrderForm.controls['date'].setValue(this.editData.date);
+      this.createOrderForm.controls['userId'].setValue(this.editData.userId);
+      this.createOrderForm.controls['productId'].setValue(this.editData.productId);
+      this.createOrderForm.controls['customerId'].setValue(this.editData.customerId);
     }
   }
 

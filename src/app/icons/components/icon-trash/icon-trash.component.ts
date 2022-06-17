@@ -9,7 +9,8 @@ import {faTrash} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconTrashComponent implements OnInit {
 
-  public myIcon: IconDefinition = faTrash;
+  public myIcon: IconDefinition = faTrash; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

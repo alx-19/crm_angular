@@ -9,7 +9,8 @@ import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconMagnifyingClassComponent implements OnInit {
 
-  public myIcon: IconDefinition = faMagnifyingGlass;
+  public myIcon: IconDefinition = faMagnifyingGlass; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

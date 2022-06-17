@@ -9,7 +9,8 @@ import {faClipboard} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconOrderComponent implements OnInit {
 
-  public myIcon: IconDefinition = faClipboard;
+  public myIcon: IconDefinition = faClipboard; // récupération de l'icon via fontawesone
+
   constructor() { }
 
   ngOnInit(): void {

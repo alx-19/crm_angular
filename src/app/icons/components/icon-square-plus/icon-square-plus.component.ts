@@ -9,7 +9,8 @@ import {faSquarePlus} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconSquarePlusComponent implements OnInit {
 
-  public myIcon: IconDefinition = faSquarePlus;
+  public myIcon: IconDefinition = faSquarePlus; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

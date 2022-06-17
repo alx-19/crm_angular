@@ -1,12 +1,13 @@
 import {CustomerI} from "../interfaces/customer-i";
 
 export class CustomerM implements CustomerI{
-  "id": 0;
+  "id": number;
+  "dealerId" : number;
   "firstname": '';
   "lastname": '';
   "mail": '';
   "mobile": '';
-  "streetNumber": 10 ;
+  "streetNumber" = 10;
   "streetType": '';
   "streetName": '';
   "streetAditional": '';
@@ -14,4 +15,4 @@ export class CustomerM implements CustomerI{
   "city": '';
   "status": '';
   "notes": '';
-}
+  }

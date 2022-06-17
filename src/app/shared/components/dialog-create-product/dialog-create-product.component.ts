@@ -22,30 +22,31 @@ export class DialogCreateProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.createProductForm = this.formBuilder.group({
-      reference: ['', Validators.required],
-      modelName: ['', Validators.required],
-      dwellingType: ['', Validators.required],
-      price: ['', Validators.required],
-      livingSpace: ['', Validators.required],
+      name: ['', Validators.required],
+      type: ['', Validators.required],
+      priceHt: ['', Validators.required],
+      surface: ['', Validators.required],
       description: ['', Validators.required],
-      urlPhoto: ['', Validators.required],
+      photoUrl: ['', Validators.required],
     })
 
     if(this.editData){
       this.actionBtn = "Modifier Produit";
       this.title = "Modifier le CLient";
-      this.createProductForm.controls['modelName'].setValue(this.editData.name);
-      this.createProductForm.controls['dwellingType'].setValue(this.editData.type);
-      this.createProductForm.controls['price'].setValue(this.editData.priceHt);
-      this.createProductForm.controls['livingSpace'].setValue(this.editData.surface);
+      this.createProductForm.controls['name'].setValue(this.editData.name);
+      this.createProductForm.controls['type'].setValue(this.editData.type);
+      this.createProductForm.controls['priceHt'].setValue(this.editData.priceHt);
+      this.createProductForm.controls['surface'].setValue(this.editData.surface);
       this.createProductForm.controls['description'].setValue(this.editData.description);
-      this.createProductForm.controls['urlPhoto'].setValue(this.editData.photoUrl);
+      this.createProductForm.controls['photoUrl'].setValue(this.editData.photoUrl);
     }
   }
 
   addProduct(){
     if(!this.editData){
+      console.log(this.createProductForm);
       if(this.createProductForm.valid)  {
+
         this.product.postProduct(this.createProductForm.value)
           .subscribe({
             next: () => {

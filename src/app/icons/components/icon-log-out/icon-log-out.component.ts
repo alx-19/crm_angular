@@ -9,7 +9,8 @@ import {faPowerOff} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconLogOutComponent implements OnInit {
 
-  public myIcon: IconDefinition = faPowerOff;
+  public myIcon: IconDefinition = faPowerOff; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

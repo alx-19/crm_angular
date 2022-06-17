@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageNotFoundComponent implements OnInit {
 
+  public titreHeader = "404 ERROR";
+
   constructor() { }
 
   ngOnInit(): void {
