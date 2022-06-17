@@ -34,11 +34,11 @@ export class DialogCreateCustomerComponent implements OnInit {
       streetNumber: ['', Validators.required],
       streetType: ['', Validators.required],
       streetName: ['', Validators.required],
-      streetAditional: ['', Validators.required],
+      streetAditional: [''],
       zipCode: ['', Validators.required],
       city: ['', Validators.required],
       status: ['', Validators.required],
-      notes: ['', Validators.required]
+      notes: ['']
     });
 
     if (this.editData) {
