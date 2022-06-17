@@ -56,7 +56,7 @@ export class TableOrderComponent implements OnInit {
             this.getAllOrders('');
           },
           error: () => {
-            alert("Erreur lors de la suppression de la commande")
+            alert("La suppression d'une commande en cours est interdite ! ")
           }
         })
   }

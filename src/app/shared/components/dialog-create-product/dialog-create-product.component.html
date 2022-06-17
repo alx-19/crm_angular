@@ -3,23 +3,19 @@
   <form [formGroup]="createProductForm">
     <mat-form-field appearance="outline">
       <mat-label>Nom</mat-label>
-      <input formControlName="modelName" matInput placeholder="Nom">
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Référence</mat-label>
-      <input formControlName="reference" matInput placeholder="Référence">
+      <input formControlName="name" matInput placeholder="Nom">
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Prix</mat-label>
-      <input formControlName="price" matInput placeholder="Prix">
+      <input formControlName="priceHt" matInput placeholder="Prix">
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Type de Logement</mat-label>
-      <input formControlName="dwellingType" matInput placeholder="Type de Logement">
+      <input formControlName="type" matInput placeholder="Type de Logement">
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Superficie</mat-label>
-      <input formControlName="livingSpace" matInput placeholder="Superficie">
+      <input formControlName="surface" matInput placeholder="Superficie">
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Description</mat-label>
@@ -27,7 +23,7 @@
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>URL Photo</mat-label>
-      <input formControlName="urlPhoto" matInput placeholder="URL Photo">
+      <input formControlName="photoUrl" matInput placeholder="URL Photo">
     </mat-form-field>
   </form>
 </div>

@@ -15,6 +15,10 @@ export class AuthService {
     this.connectedUser$ = new BehaviorSubject<UserM>(userInStorage ? JSON.parse(userInStorage) : null);
   }
 
+  public getCurrentUser$(): Observable<UserM> {
+    return this.connectedUser$.asObservable();
+  }
+
   public authenticate(username: string, password: string): Observable<UserM> {
     const headers = new HttpHeaders({
       authorization: 'Basic ' + btoa(username + ':' + password)

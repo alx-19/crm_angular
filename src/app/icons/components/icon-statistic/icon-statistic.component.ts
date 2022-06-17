@@ -9,7 +9,8 @@ import {faArrowUpRightDots} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconStatisticComponent implements OnInit {
 
-  public myIcon: IconDefinition = faArrowUpRightDots;
+  public myIcon: IconDefinition = faArrowUpRightDots; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

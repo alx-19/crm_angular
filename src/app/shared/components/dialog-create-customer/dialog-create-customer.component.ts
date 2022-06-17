@@ -3,6 +3,8 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {CustomerService} from "../../../customer/services/customer.service";
 import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {CustomerM} from "../../models/customer-m";
+import {AuthService} from "../../../core/services/auth.service";
+import {switchMap} from "rxjs";
 
 
 @Component({
@@ -17,6 +19,7 @@ export class DialogCreateCustomerComponent implements OnInit {
   title: string = "Ajouter un Client";
 
   constructor(private formBuilder: FormBuilder,
+              private authService: AuthService,
               private customer : CustomerService,
               @Inject(MAT_DIALOG_DATA) public editData: CustomerM,
               private dialogRef: MatDialogRef<DialogCreateCustomerComponent>) {
@@ -59,12 +62,21 @@ export class DialogCreateCustomerComponent implements OnInit {
   addCustomer() {
     if (!this.editData) {
       if (this.createCustomerForm.valid) {
-        this.customer.postCustomer(this.createCustomerForm.value)
+        this.authService.getCurrentUser$()
+          .pipe(
+            switchMap(user => {
+              let customerToCreate = this.createCustomerForm.value as CustomerM;
+              customerToCreate.dealerId = user.id;
+              return this.customer.postCustomer(customerToCreate);
+            })
+          )
           .subscribe({
-            next: () => {
+            next: (data) => {
+              console.log(data);
               alert("Nouveau Client créé");
               this.createCustomerForm.reset();
               this.dialogRef.close('save');
+              this.ngOnInit();
             },
             error: () => {
               alert("Erreur lors de la création du Client")
@@ -73,7 +85,6 @@ export class DialogCreateCustomerComponent implements OnInit {
       }
     } else {
       this.updateCustomer();
-
     }
   }
   updateCustomer(){
@@ -83,6 +94,7 @@ export class DialogCreateCustomerComponent implements OnInit {
           alert("Le client a bien été modifié");
           this.createCustomerForm.reset();
           this.dialogRef.close('update');
+          this.ngOnInit();
         },
         error: () => {
           alert("Erreur lors de la modification du client !")

@@ -1,5 +1,6 @@
 export interface CustomerI {
   "id": number;
+  "dealerId": number;
   "firstname": string;
   "lastname": string;
   "mail": string;

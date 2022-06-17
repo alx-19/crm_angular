@@ -9,7 +9,8 @@ import {faBoxArchive} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconProductComponent implements OnInit {
 
-  public myIcon: IconDefinition = faBoxArchive;
+  public myIcon: IconDefinition = faBoxArchive; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

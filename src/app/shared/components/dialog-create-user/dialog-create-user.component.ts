@@ -30,7 +30,7 @@ export class DialogCreateUserComponent implements OnInit {
         mail: ['', Validators.required],
         password: ['', Validators.required],
         phone: ['', Validators.required],
-      grants: ['', Validators.required]
+        grants: ['', Validators.required]
     })
 
     if (this.editData) {
@@ -41,7 +41,7 @@ export class DialogCreateUserComponent implements OnInit {
       this.createUserForm.controls['mail'].setValue(this.editData.mail);
       this.createUserForm.controls['password'].setValue(this.editData.password);
       this.createUserForm.controls['phone'].setValue(this.editData.phone);
-      this.createUserForm.controls['role'].setValue(this.editData.grants);
+      this.createUserForm.controls['grants'].setValue(this.editData.grants);
     }
   }
 

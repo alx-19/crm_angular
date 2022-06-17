@@ -9,7 +9,8 @@ import {faAddressCard} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconCustomerComponent implements OnInit {
 
-  public myIcon: IconDefinition = faAddressCard;
+  public myIcon: IconDefinition = faAddressCard; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

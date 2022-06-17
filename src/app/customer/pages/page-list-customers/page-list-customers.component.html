@@ -7,7 +7,7 @@
     <div class="group-search">
       <input #nom [(ngModel)]="searchTerm" name="searchTerm" class="form-control" id="filteredSearch" placeholder="Recherche">
     </div>
-
+    <!--   Bouton pour ouvrir la modal permettant d'ajouter un client-->
     <div id="addCustomer">
       <button (click)="openDialogCreateCustomer()" id="addCustomerGroup">
         <app-icon-square-plus></app-icon-square-plus>
@@ -16,6 +16,7 @@
     </div>
   </div>
   <hr>
+  <!--   Appel de la card client (avec searchTerm pour rattacher la fonction de recherche)-->
   <app-card-customer [searchTerm]="searchTerm"></app-card-customer>
 </div>
 

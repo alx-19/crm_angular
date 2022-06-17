@@ -24,8 +24,9 @@ export class PageLoginComponent implements OnInit {
   }
 
 
+  //fonction de connextion
   login(){
-    this.authService.authenticate(this.pageLogin.get('username')?.value, this.pageLogin.get('password')?.value)
-      .subscribe(() => this.router.navigate(['/breizhouse/home']));
+    this.authService.authenticate(this.pageLogin.get('username')?.value, this.pageLogin.get('password')?.value) //authentification via username et password
+      .subscribe(() => this.router.navigate(['/breizhouse/home'])); //route vers laquelle l'utilisateur se dirige
   }
 }

@@ -21,10 +21,11 @@ export class PageReadCustomerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.params['id'];
-    this.getItemById();
+    this.id = this.route.snapshot.params['id']; // permet de savoir sur quel id nous sommes
+    this.getItemById(); //recherche par ID
   }
 
+  // fonction pour obtenir un client par son ID
   getItemById(){
   this.customerService.getItemById(this.id).subscribe(data=>{
     this.data = data;

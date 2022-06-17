@@ -27,7 +27,7 @@ export class CustomerService {
     return this.httpClient.delete<void>(this.url + '/' +id);
   }
 
-  putCustomer(customer: CustomerM, id: 0): Observable<CustomerM> {
+  putCustomer(customer: CustomerM, id: number): Observable<CustomerM> {
     return this.httpClient.put<CustomerM>(this.url + '/' +id, customer);
   }
 

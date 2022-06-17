@@ -9,7 +9,8 @@ import {IconDefinition} from '@fortawesome/fontawesome-common-types';
 })
 export class IconHomeComponent implements OnInit {
 
-  public myIcon: IconDefinition = faHome;
+  public myIcon: IconDefinition = faHome; // récupération de l'icon via fontawesone
+
   constructor() { }
 
   ngOnInit(): void {

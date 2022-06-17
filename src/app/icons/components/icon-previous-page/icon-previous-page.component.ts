@@ -9,7 +9,8 @@ import {faArrowRotateLeft} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconPreviousPageComponent implements OnInit {
 
-  public myIcon: IconDefinition = faArrowRotateLeft;
+  public myIcon: IconDefinition = faArrowRotateLeft; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 

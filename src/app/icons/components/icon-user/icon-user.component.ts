@@ -9,7 +9,8 @@ import {faUser} from "@fortawesome/free-solid-svg-icons";
 })
 export class IconUserComponent implements OnInit {
 
-  public myIcon: IconDefinition = faUser;
+  public myIcon: IconDefinition = faUser; // récupération de l'icon via fontawesone
+
 
   constructor() { }
 
